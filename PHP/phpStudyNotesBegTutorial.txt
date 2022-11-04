@@ -1,0 +1,367 @@
+"PHP: Hypertext Preprocessor"
+PHP is executed on the server and returned to browser as plain HTML
+Files can contain text, HTML, CSS, JS and PHP code
+
+What can it do:
+- generate dynamic page content
+- create, open, read, write, delete, and close files on the server
+- collect form data
+- send / receive cookies
+- add, delete, and modify data in a DB
+- control user-access
+- encrypt data
+
+BASIC SYNTAX:
+<?php
+    // all PHP code goes inbetween these tags
+?>
+Usually, a file will contain HTML tags, and some PHP scripting code
+----Example:
+<body>
+    <h1>This is HTML</h1>
+    <?php
+        echo "This is PHP";
+	echo "<br>";
+    ?>
+</body>
+----
+note: PHP keywords are not case-sensitive: echo, ECHO, EcHo are equivalent
+
+COMMENTS:
+----Example:
+    // single line comment
+.   # also a single line comment
+    /* 
+         Multiline comment
+    */
+----
+
+ASSIGN VARIABLES:
+- variables start the $ sign, followed by the name of the var
+----Example:
+    $txt = "Hello";
+    $x = 10.5;
+----
+note: can't declare variables, must define them
+
+OUTPUT VARIABLES:
+----Example:
+    $txt = "Hello";
+    // these two do the same thing; the '.' is to output text and variables
+    echo "You say goodbye, and I say $txt!";
+    echo "You say goodbye, and I say " . $txt . "!";
+    
+    $x = 5;
+    $y = 4;
+    echo $x + $y;
+----
+note: PHP is loosely typed
+
+SCOPE:
+- a variable with a global scope CAN ONLY be accessed outside of any functions
+----Example:
+    $x = 5;
+
+    function test() {
+        // produces error
+        echo $x;
+    }
+
+    // doesn't produce error
+    echo $x;
+----
+- a variable with a local scope CAN ONLY be accessed within that function
+----Example:
+    function test() {
+        $x = 5;
+        // doesn't produce error
+        echo $x;
+    }
+
+    // produces error
+    echo $x;
+----
+- use of the global keyword can bring a global variable into a local scope
+----Example:
+    $x = 5;
+
+    function test() {
+        global $x;
+        // doesn't produce error
+        echo $x;
+    }
+----
+- you can also use the $GLOBALS array to use any and all global variables
+----Example:
+    $x = 5;
+
+    function test() {
+	// doesn't produce error
+	echo $GLOBALS['x'];
+    }
+----
+- a static variable that was defined inside a function will persist after the function
+  exits instead of being destroyed
+----Example:
+    function test() {
+	static $x = 0;
+        echo $x;
+        $x++;
+    }
+
+    // will output: 0 1
+    test();
+    test();
+----
+note: the variable scope is still local to the function
+
+PRINT / ECHO:
+- Both output data to the screen
+- Differences:
+    - echo has no return value, print returns 1 (can be used in expressions)
+    - echo can take multiple parameters, print can only take one
+----Example:
+    // outputting text
+    echo "Hello there!";
+    echo "Hello ", "there!";
+    // outputting text and variables (shown earlier)
+    echo "Hello " . $var . "!";
+----
+note: you can replace 'echo' with 'print' and output will be the same, but will also
+    return 1
+
+DATA TYPES:
+    string	integer       float        boolean
+    array       object        NULL         resource
+note: the function var_dump($var) returns the data type and value
+
+string:  can use '' or ""
+integer: -2,147,463,648 - 2,147,483,647
+float:   1.234 ,  1.2e3 ,  7E-10 ,  1_234.456 //PHP 7.4.0
+boolean: true / false
+array:   defined as: array("Volvo", "BMW", "Toyota");
+object:  constructor: function __construct($color, $model) {$this->color=...}
+	 -> acts like . in other languages for accessing object properties
+null:
+resource: stores reference to functions / resources external to PHP ("external pointers")
+
+STRING FUNCTIONS:
+strlen()         - returns length of a string
+    strlen("Hello!") // outputs: 6
+str_word_count() - returns number of words in string
+    str_word_count("Hello world!") // outputs: 2
+strrev()	 - returns reversed string
+    strrev("Hello!") // outputs: "!olleH"
+strpos()         - search for a text within a string. If found, returns pos of first match
+						      If not found, returns false
+    strpos("Hello world!", "world") // outputs: 6
+    strpos("Hello wolrd!", "bees")  // outputs: false
+str_replace()    - replace text within a string
+    str_replace("world", "dolly", "Hello world!") // outputs: "Hello dolly!"
+
+NUMBERS:
+integers:
+- integers can be specified as: 
+    decimal (10-based)       hexadecimal (16-based: 0x...)     octal (8-based: 0...)
+- predefined integer constants:
+    PHP_INT_MAX     PHP_INT_MIN      PHP_INT_SIZE (size of int in bytes)
+- functions to check if variable is an integer:
+    is_int()     is_integer()      is_long() 
+
+floats:
+- predefined float constants:
+    PHP_FLOAT_MAX    PHP_FLOAT_MIN
+- functions to check if variable is a float:
+    is_float()   is_double()
+- numbers greater than PHP_FLOAT_MAX are considered infinite (INF)
+    is_finite()    is_infinite()
+
+NaN (Not a Number):
+- used for impossible math operations
+    is_nan()
+
+numerical strings:
+- 5968       IS numeric
+- "5968"     IS numeric
+- "59" + 100 IS numeric (math operation will return 159)
+- "Hello"    IS NOT numeric
+
+cast strings and floats to integers:
+     (int)     (integer)     int_val()
+(int)245.43   =   245
+(int)"245.43" =   245
+
+MATH:
+  pi()   max()   min()   abs()   sqrt()   round()   rand()   rand(min, max)
+
+CONSTANTS:
+- constant names start with letter or underscore (no $ before name)
+- constants are automatically global
+
+to create a constant, use:  define(name, value, [case-insensitive])
+----Example:
+    define("GREETING", "Hello there!");
+    echo GREETING;  // outputs: "Hello there!"
+
+    define("GREETING", "Hello there!", true);
+    echo greeting;  // outputs: "Hello there!"
+----
+note: you can also use define() to define a constant array
+
+OPERATORS:
+arithmetic:
+   +   -   *   /   %   **
+assignment:
+   =   +=   -=   *=   /=   %=
+comparison:
+   ==   ===   !=   <>   !==   >   <   >=   <=   <=> (-1, 0, 1 depending how x compares w/ y)
+increment / decrement:
+   ++$x   $x++   --$x   $x--
+logical:
+   and   or   xor   &&   ||   !
+concatenation:
+   .   .=
+array:
+   + (union)   ==   ===   !=   <>   !==
+conditional assignment:
+   $x = expr1 ? expr2 : expr3               $x = expr1 ?? expr2
+   if expr1 true, then expr2, else expr3    if expr1 exists && !null, then expr1, else expr2
+
+CONDITIONAL STATEMENTS:
+   if   if..else   if..elseif..else   switch
+----Example:
+    if (condition) {}
+
+    switch ($x) {
+        case a:
+            ...
+	    break;
+        case b:
+            ...
+            break;
+        default:
+            ...
+    }
+---- 
+
+LOOPS:
+   while   do..while   for   foreach
+----Example:
+    while () {}
+
+    do {} while ()
+
+    for ($x=0; $x<=10; $x++) {}
+
+    foreach ($array as $value) {}    
+----
+
+USER-DEFINED FUNCTIONS:
+function parameters are naturally loosely typed
+----Example:
+    function functionName($fname, $year) {}
+----
+
+to specify strict PHP to care about data types
+----Example:
+<?php declare(strict_types=1);
+    function functionName(str $fname, int $year) {}
+
+    // return type declaration
+    function functionName(str $fname, int $year) : str {}
+?>
+----
+
+default arguments
+----Example:
+    function functionName($fname = "Harold") {}
+----
+
+pass by reference TO UPDATE A VARIABLE
+----Example:
+    function functionName(&$fname) {}
+----
+
+ARRAYS:
+define an $array: array("", "", "");
+count($array)  - get length of $array
+
+to loop through array, use for
+
+ASSOCIATIVE ARRAYS:
+// like a dictionary
+$age = array("Peter"=>"35", "Ben"=>"37");
+$age["Peter"] = "35"
+
+to loop through an associative array, use foreach
+foreach($age as $key => $value)
+
+MULTIDIMENSIONAL ARRAYS:
+
+SORTING ARRAY:
+sort()     - ascending order
+rsort()    - descending order
+multidimensional
+asort()    - ascending order, according to value
+ksort()    - ascending order, according to key
+arsort()   - descending order, according to value
+krsort()   - descending order, according to key
+
+SUPERGLOBALS:
+   $GLOBAL   $_SERVER   $_REQUEST   $_POST   $_GET   $_FILES   $_ENV   $_COOKIE   $_SESSION
+$GLOBAL['var_name']    - stores all global variables for any use
+$_SERVER['name']       - stores info about headers, paths, script locations
+$_REQUEST[]            - collects data after submission of an HTML form
+$_POST[]               - collects HTML form data with method="post". also to pass vars
+$_GET[]                - collects HTML form data with method="get"
+
+REGULAR EXPRESSION:
+$exp = "/school/i";
+
+preg_match($patt, $str)          - returns 1 of pattern is found, else 0
+preg_match_all($patt, $str)      - returns # of times the pattern is found
+preg_replace($patt, $repl, $str) - returns new string where matches have been replaced with string
+
+/ - delimiter
+modifiers:
+   i - case-insensitive
+   m - multiline search
+   u - UTF-8
+patterns:
+   [abc]  - find 1 char from between the brackets
+   [^abc] - find any char NOT in brackets
+   [0-9]  - find 1 char from range 0 - 9
+metacharacters:
+   |    - find 1 of patterns separated i.e. cat|dog|fish
+   .    - find 1 instance if any char
+   ^    - find match as beginning of a string: ^Hello
+   $    - find match at end of string: World$
+   \d   - find a digit
+   \s   - find whitespace char
+   \b   - find match at beginning or end: \bWORD, WORD\b
+ \uxxxx - find unicode char specified by hex number
+quantifiers:
+   n+       - match any string containing 1+ n
+   n*       - match any string containing 0+ n
+   n?       - match any string containing 0 or 1 n
+   n{x}     - match any string containing sequence of x n's
+   n{x,y}   - match any string containing sequence of x to y n's
+   n{x,}    - match any string containing sequence of x+ n's
+  ba(na){2} - match 'ba' followed by 2 'na''s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
