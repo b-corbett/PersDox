@@ -1,4 +1,4 @@
 To get PAT (Personal Access Token):
 - log into github.com
-- settings -> developer settings -> personal access tokens
+- settings -> developer settings -> personal access tokens (PATs)
 
