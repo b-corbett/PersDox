@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="369" xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.0.2" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-US; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">Thu Nov  3 17:27:55 2022
+</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.date">Thu Nov  3 17:27:55 2022
+</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<history version="1" edit-time="32" last-saved="1667521675" uid="73a40606-5bd7-11ed-9a61-d7671e89ac7a">
+<version id="1" started="1667521675" uid="86d97cce-5bd7-11ed-9a61-d7671e89ac7a" auto="0" top-xid="369"/>
+</history>
+<styles>
+<s type="P" name="Normal" basedon="" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; font-variant:normal; margin-left:0pt; text-indent:0in; widows:2; font-style:normal; font-weight:normal; text-decoration:none; color:000000; line-height:1.0; text-align:left; margin-bottom:0pt; text-position:normal; margin-right:0pt; bgcolor:transparent; font-size:12pt; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="A4" orientation="portrait" width="210.000000" height="297.000000" units="mm" page-scale="1.000000"/>
+<section xid="1">
+<p style="Normal" xid="2" props="text-align:left; dom-dir:ltr">"PHP: Hypertext Preprocessor"</p>
+<p style="Normal" xid="3" props="text-align:left; dom-dir:ltr">PHP is executed on the server and returned to browser as plain HTML</p>
+<p style="Normal" xid="4" props="text-align:left; dom-dir:ltr">Files can contain text, HTML, CSS, JS and PHP code</p>
+<p style="Normal" xid="5"><c></c></p>
+<p style="Normal" xid="6" props="text-align:left; dom-dir:ltr">What can it do:</p>
+<p style="Normal" xid="7" props="text-align:left; dom-dir:ltr">- generate dynamic page content</p>
+<p style="Normal" xid="8" props="text-align:left; dom-dir:ltr">- create, open, read, write, delete, and close files on the server</p>
+<p style="Normal" xid="9" props="text-align:left; dom-dir:ltr">- collect form data</p>
+<p style="Normal" xid="10" props="text-align:left; dom-dir:ltr">- send / receive cookies</p>
+<p style="Normal" xid="11" props="text-align:left; dom-dir:ltr">- add, delete, and modify data in a DB</p>
+<p style="Normal" xid="12" props="text-align:left; dom-dir:ltr">- control user-access</p>
+<p style="Normal" xid="13" props="text-align:left; dom-dir:ltr">- encrypt data</p>
+<p style="Normal" xid="14"><c></c></p>
+<p style="Normal" xid="15" props="text-align:left; dom-dir:ltr">BASIC SYNTAX:</p>
+<p style="Normal" xid="16" props="text-align:left; dom-dir:ltr">&lt;?php</p>
+<p style="Normal" xid="17" props="text-align:left; dom-dir:ltr">    // all PHP code goes inbetween these tags</p>
+<p style="Normal" xid="18">?&gt;</p>
+<p style="Normal" xid="19" props="text-align:left; dom-dir:ltr">Usually, a file will contain HTML tags, and some PHP scripting code</p>
+<p style="Normal" xid="20" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="21" props="text-align:left; dom-dir:ltr">&lt;body&gt;</p>
+<p style="Normal" xid="22" props="text-align:left; dom-dir:ltr">    &lt;h1&gt;This is HTML&lt;/h1&gt;</p>
+<p style="Normal" xid="23" props="text-align:left; dom-dir:ltr">    &lt;?php</p>
+<p style="Normal" xid="24" props="text-align:left; dom-dir:ltr">        echo "This is PHP";</p>
+<p style="Normal" xid="25" props="text-align:left; dom-dir:ltr">	echo "&lt;br&gt;";</p>
+<p style="Normal" xid="26">    ?&gt;</p>
+<p style="Normal" xid="27" props="text-align:left; dom-dir:ltr">&lt;/body&gt;</p>
+<p style="Normal" xid="28">----</p>
+<p style="Normal" xid="29" props="text-align:left; dom-dir:ltr">note: PHP keywords are not case-sensitive: echo, ECHO, EcHo are equivalent</p>
+<p style="Normal" xid="30"><c></c></p>
+<p style="Normal" xid="31" props="text-align:left; dom-dir:ltr">COMMENTS:</p>
+<p style="Normal" xid="32" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="33" props="text-align:left; dom-dir:ltr">    // single line comment</p>
+<p style="Normal" xid="34" props="text-align:left; dom-dir:ltr">.   # also a single line comment</p>
+<p style="Normal" xid="35">    /* </p>
+<p style="Normal" xid="36" props="text-align:left; dom-dir:ltr">         Multiline comment</p>
+<p style="Normal" xid="37">    */</p>
+<p style="Normal" xid="38">----</p>
+<p style="Normal" xid="39"><c></c></p>
+<p style="Normal" xid="40" props="text-align:left; dom-dir:ltr">ASSIGN VARIABLES:</p>
+<p style="Normal" xid="41" props="text-align:left; dom-dir:ltr">- variables start the $ sign, followed by the name of the var</p>
+<p style="Normal" xid="42" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="43" props="text-align:left; dom-dir:ltr">    $txt = "Hello";</p>
+<p style="Normal" xid="44" props="text-align:left; dom-dir:ltr">    $x = 10.5;</p>
+<p style="Normal" xid="45">----</p>
+<p style="Normal" xid="46" props="text-align:left; dom-dir:ltr">note: can't declare variables, must define them</p>
+<p style="Normal" xid="47"><c></c></p>
+<p style="Normal" xid="48" props="text-align:left; dom-dir:ltr">OUTPUT VARIABLES:</p>
+<p style="Normal" xid="49" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="50" props="text-align:left; dom-dir:ltr">    $txt = "Hello";</p>
+<p style="Normal" xid="51" props="text-align:left; dom-dir:ltr">    // these two do the same thing; the '.' is to output text and variables</p>
+<p style="Normal" xid="52" props="text-align:left; dom-dir:ltr">    echo "You say goodbye, and I say $txt!";</p>
+<p style="Normal" xid="53" props="text-align:left; dom-dir:ltr">    echo "You say goodbye, and I say " . $txt . "!";</p>
+<p style="Normal" xid="54">    </p>
+<p style="Normal" xid="55" props="text-align:left; dom-dir:ltr">    $x = 5;</p>
+<p style="Normal" xid="56" props="text-align:left; dom-dir:ltr">    $y = 4;</p>
+<p style="Normal" xid="57" props="text-align:left; dom-dir:ltr">    echo $x + $y;</p>
+<p style="Normal" xid="58">----</p>
+<p style="Normal" xid="59" props="text-align:left; dom-dir:ltr">note: PHP is loosely typed</p>
+<p style="Normal" xid="60"><c></c></p>
+<p style="Normal" xid="61" props="text-align:left; dom-dir:ltr">SCOPE:</p>
+<p style="Normal" xid="62" props="text-align:left; dom-dir:ltr">- a variable with a global scope CAN ONLY be accessed outside of any functions</p>
+<p style="Normal" xid="63" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="64" props="text-align:left; dom-dir:ltr">    $x = 5;</p>
+<p style="Normal" xid="65"><c></c></p>
+<p style="Normal" xid="66" props="text-align:left; dom-dir:ltr">    function test() {</p>
+<p style="Normal" xid="67" props="text-align:left; dom-dir:ltr">        // produces error</p>
+<p style="Normal" xid="68" props="text-align:left; dom-dir:ltr">        echo $x;</p>
+<p style="Normal" xid="69">    }</p>
+<p style="Normal" xid="70"><c></c></p>
+<p style="Normal" xid="71" props="text-align:left; dom-dir:ltr">    // doesn't produce error</p>
+<p style="Normal" xid="72" props="text-align:left; dom-dir:ltr">    echo $x;</p>
+<p style="Normal" xid="73">----</p>
+<p style="Normal" xid="74" props="text-align:left; dom-dir:ltr">- a variable with a local scope CAN ONLY be accessed within that function</p>
+<p style="Normal" xid="75" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="76" props="text-align:left; dom-dir:ltr">    function test() {</p>
+<p style="Normal" xid="77" props="text-align:left; dom-dir:ltr">        $x = 5;</p>
+<p style="Normal" xid="78" props="text-align:left; dom-dir:ltr">        // doesn't produce error</p>
+<p style="Normal" xid="79" props="text-align:left; dom-dir:ltr">        echo $x;</p>
+<p style="Normal" xid="80">    }</p>
+<p style="Normal" xid="81"><c></c></p>
+<p style="Normal" xid="82" props="text-align:left; dom-dir:ltr">    // produces error</p>
+<p style="Normal" xid="83" props="text-align:left; dom-dir:ltr">    echo $x;</p>
+<p style="Normal" xid="84">----</p>
+<p style="Normal" xid="85" props="text-align:left; dom-dir:ltr">- use of the global keyword can bring a global variable into a local scope</p>
+<p style="Normal" xid="86" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="87" props="text-align:left; dom-dir:ltr">    $x = 5;</p>
+<p style="Normal" xid="88"><c></c></p>
+<p style="Normal" xid="89" props="text-align:left; dom-dir:ltr">    function test() {</p>
+<p style="Normal" xid="90" props="text-align:left; dom-dir:ltr">        global $x;</p>
+<p style="Normal" xid="91" props="text-align:left; dom-dir:ltr">        // doesn't produce error</p>
+<p style="Normal" xid="92" props="text-align:left; dom-dir:ltr">        echo $x;</p>
+<p style="Normal" xid="93">    }</p>
+<p style="Normal" xid="94">----</p>
+<p style="Normal" xid="95" props="text-align:left; dom-dir:ltr">- you can also use the $GLOBALS array to use any and all global variables</p>
+<p style="Normal" xid="96" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="97" props="text-align:left; dom-dir:ltr">    $x = 5;</p>
+<p style="Normal" xid="98"><c></c></p>
+<p style="Normal" xid="99" props="text-align:left; dom-dir:ltr">    function test() {</p>
+<p style="Normal" xid="100" props="text-align:left; dom-dir:ltr">	// doesn't produce error</p>
+<p style="Normal" xid="101" props="text-align:left; dom-dir:ltr">	echo $GLOBALS['x'];</p>
+<p style="Normal" xid="102">    }</p>
+<p style="Normal" xid="103">----</p>
+<p style="Normal" xid="104" props="text-align:left; dom-dir:ltr">- a static variable that was defined inside a function will persist after the function</p>
+<p style="Normal" xid="105" props="text-align:left; dom-dir:ltr">  exits instead of being destroyed</p>
+<p style="Normal" xid="106" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="107" props="text-align:left; dom-dir:ltr">    function test() {</p>
+<p style="Normal" xid="108" props="text-align:left; dom-dir:ltr">	static $x = 0;</p>
+<p style="Normal" xid="109" props="text-align:left; dom-dir:ltr">        echo $x;</p>
+<p style="Normal" xid="110" props="text-align:left; dom-dir:ltr">        $x++;</p>
+<p style="Normal" xid="111">    }</p>
+<p style="Normal" xid="112"><c></c></p>
+<p style="Normal" xid="113" props="text-align:left; dom-dir:ltr">    // will output: 0 1</p>
+<p style="Normal" xid="114" props="text-align:left; dom-dir:ltr">    test();</p>
+<p style="Normal" xid="115" props="text-align:left; dom-dir:ltr">    test();</p>
+<p style="Normal" xid="116">----</p>
+<p style="Normal" xid="117" props="text-align:left; dom-dir:ltr">note: the variable scope is still local to the function</p>
+<p style="Normal" xid="118"><c></c></p>
+<p style="Normal" xid="119" props="text-align:left; dom-dir:ltr">PRINT / ECHO:</p>
+<p style="Normal" xid="120" props="text-align:left; dom-dir:ltr">- Both output data to the screen</p>
+<p style="Normal" xid="121" props="text-align:left; dom-dir:ltr">- Differences:</p>
+<p style="Normal" xid="122" props="text-align:left; dom-dir:ltr">    - echo has no return value, print returns 1 (can be used in expressions)</p>
+<p style="Normal" xid="123" props="text-align:left; dom-dir:ltr">    - echo can take multiple parameters, print can only take one</p>
+<p style="Normal" xid="124" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="125" props="text-align:left; dom-dir:ltr">    // outputting text</p>
+<p style="Normal" xid="126" props="text-align:left; dom-dir:ltr">    echo "Hello there!";</p>
+<p style="Normal" xid="127" props="text-align:left; dom-dir:ltr">    echo "Hello ", "there!";</p>
+<p style="Normal" xid="128" props="text-align:left; dom-dir:ltr">    // outputting text and variables (shown earlier)</p>
+<p style="Normal" xid="129" props="text-align:left; dom-dir:ltr">    echo "Hello " . $var . "!";</p>
+<p style="Normal" xid="130">----</p>
+<p style="Normal" xid="131" props="text-align:left; dom-dir:ltr">note: you can replace 'echo' with 'print' and output will be the same, but will also</p>
+<p style="Normal" xid="132" props="text-align:left; dom-dir:ltr">    return 1</p>
+<p style="Normal" xid="133"><c></c></p>
+<p style="Normal" xid="134" props="text-align:left; dom-dir:ltr">DATA TYPES:</p>
+<p style="Normal" xid="135" props="text-align:left; dom-dir:ltr">    string	integer       float        boolean</p>
+<p style="Normal" xid="136" props="text-align:left; dom-dir:ltr">    array       object        NULL         resource</p>
+<p style="Normal" xid="137" props="text-align:left; dom-dir:ltr">note: the function var_dump($var) returns the data type and value</p>
+<p style="Normal" xid="138"><c></c></p>
+<p style="Normal" xid="139" props="text-align:left; dom-dir:ltr">string:  can use '' or ""</p>
+<p style="Normal" xid="140" props="text-align:left; dom-dir:ltr">integer: -2,147,463,648 - 2,147,483,647</p>
+<p style="Normal" xid="141" props="text-align:left; dom-dir:ltr">float:   1.234 ,  1.2e3 ,  7E-10 ,  1_234.456 //PHP 7.4.0</p>
+<p style="Normal" xid="142" props="text-align:left; dom-dir:ltr">boolean: true / false</p>
+<p style="Normal" xid="143" props="text-align:left; dom-dir:ltr">array:   defined as: array("Volvo", "BMW", "Toyota");</p>
+<p style="Normal" xid="144" props="text-align:left; dom-dir:ltr">object:  constructor: function __construct($color, $model) {$this-&gt;color=...}</p>
+<p style="Normal" xid="145" props="text-align:left; dom-dir:ltr">	 -&gt; acts like . in other languages for accessing object properties</p>
+<p style="Normal" xid="146" props="text-align:left; dom-dir:ltr">null:</p>
+<p style="Normal" xid="147" props="text-align:left; dom-dir:ltr">resource: stores reference to functions / resources external to PHP ("external pointers")</p>
+<p style="Normal" xid="148"><c></c></p>
+<p style="Normal" xid="149" props="text-align:left; dom-dir:ltr">STRING FUNCTIONS:</p>
+<p style="Normal" xid="150" props="text-align:left; dom-dir:ltr">strlen()         - returns length of a string</p>
+<p style="Normal" xid="151" props="text-align:left; dom-dir:ltr">    strlen("Hello!") // outputs: 6</p>
+<p style="Normal" xid="152" props="text-align:left; dom-dir:ltr">str_word_count() - returns number of words in string</p>
+<p style="Normal" xid="153" props="text-align:left; dom-dir:ltr">    str_word_count("Hello world!") // outputs: 2</p>
+<p style="Normal" xid="154" props="text-align:left; dom-dir:ltr">strrev()	 - returns reversed string</p>
+<p style="Normal" xid="155" props="text-align:left; dom-dir:ltr">    strrev("Hello!") // outputs: "!olleH"</p>
+<p style="Normal" xid="156" props="text-align:left; dom-dir:ltr">strpos()         - search for a text within a string. If found, returns pos of first match</p>
+<p style="Normal" xid="157" props="text-align:left; dom-dir:ltr">						      If not found, returns false</p>
+<p style="Normal" xid="158" props="text-align:left; dom-dir:ltr">    strpos("Hello world!", "world") // outputs: 6</p>
+<p style="Normal" xid="159" props="text-align:left; dom-dir:ltr">    strpos("Hello wolrd!", "bees")  // outputs: false</p>
+<p style="Normal" xid="160" props="text-align:left; dom-dir:ltr">str_replace()    - replace text within a string</p>
+<p style="Normal" xid="161" props="text-align:left; dom-dir:ltr">    str_replace("world", "dolly", "Hello world!") // outputs: "Hello dolly!"</p>
+<p style="Normal" xid="162"><c></c></p>
+<p style="Normal" xid="163" props="text-align:left; dom-dir:ltr">NUMBERS:</p>
+<p style="Normal" xid="164" props="text-align:left; dom-dir:ltr">integers:</p>
+<p style="Normal" xid="165" props="text-align:left; dom-dir:ltr">- integers can be specified as: </p>
+<p style="Normal" xid="166" props="text-align:left; dom-dir:ltr">    decimal (10-based)       hexadecimal (16-based: 0x...)     octal (8-based: 0...)</p>
+<p style="Normal" xid="167" props="text-align:left; dom-dir:ltr">- predefined integer constants:</p>
+<p style="Normal" xid="168" props="text-align:left; dom-dir:ltr">    PHP_INT_MAX     PHP_INT_MIN      PHP_INT_SIZE (size of int in bytes)</p>
+<p style="Normal" xid="169" props="text-align:left; dom-dir:ltr">- functions to check if variable is an integer:</p>
+<p style="Normal" xid="170" props="text-align:left; dom-dir:ltr">    is_int()     is_integer()      is_long() </p>
+<p style="Normal" xid="171"><c></c></p>
+<p style="Normal" xid="172" props="text-align:left; dom-dir:ltr">floats:</p>
+<p style="Normal" xid="173" props="text-align:left; dom-dir:ltr">- predefined float constants:</p>
+<p style="Normal" xid="174" props="text-align:left; dom-dir:ltr">    PHP_FLOAT_MAX    PHP_FLOAT_MIN</p>
+<p style="Normal" xid="175" props="text-align:left; dom-dir:ltr">- functions to check if variable is a float:</p>
+<p style="Normal" xid="176" props="text-align:left; dom-dir:ltr">    is_float()   is_double()</p>
+<p style="Normal" xid="177" props="text-align:left; dom-dir:ltr">- numbers greater than PHP_FLOAT_MAX are considered infinite (INF)</p>
+<p style="Normal" xid="178" props="text-align:left; dom-dir:ltr">    is_finite()    is_infinite()</p>
+<p style="Normal" xid="179"><c></c></p>
+<p style="Normal" xid="180" props="text-align:left; dom-dir:ltr">NaN (Not a Number):</p>
+<p style="Normal" xid="181" props="text-align:left; dom-dir:ltr">- used for impossible math operations</p>
+<p style="Normal" xid="182" props="text-align:left; dom-dir:ltr">    is_nan()</p>
+<p style="Normal" xid="183"><c></c></p>
+<p style="Normal" xid="184" props="text-align:left; dom-dir:ltr">numerical strings:</p>
+<p style="Normal" xid="185" props="text-align:left; dom-dir:ltr">- 5968       IS numeric</p>
+<p style="Normal" xid="186" props="text-align:left; dom-dir:ltr">- "5968"     IS numeric</p>
+<p style="Normal" xid="187" props="text-align:left; dom-dir:ltr">- "59" + 100 IS numeric (math operation will return 159)</p>
+<p style="Normal" xid="188" props="text-align:left; dom-dir:ltr">- "Hello"    IS NOT numeric</p>
+<p style="Normal" xid="189"><c></c></p>
+<p style="Normal" xid="190" props="text-align:left; dom-dir:ltr">cast strings and floats to integers:</p>
+<p style="Normal" xid="191" props="text-align:left; dom-dir:ltr">     (int)     (integer)     int_val()</p>
+<p style="Normal" xid="192" props="text-align:left; dom-dir:ltr">(int)245.43   =   245</p>
+<p style="Normal" xid="193" props="text-align:left; dom-dir:ltr">(int)"245.43" =   245</p>
+<p style="Normal" xid="194"><c></c></p>
+<p style="Normal" xid="195" props="text-align:left; dom-dir:ltr">MATH:</p>
+<p style="Normal" xid="196" props="text-align:left; dom-dir:ltr">  pi()   max()   min()   abs()   sqrt()   round()   rand()   rand(min, max)</p>
+<p style="Normal" xid="197"><c></c></p>
+<p style="Normal" xid="198" props="text-align:left; dom-dir:ltr">CONSTANTS:</p>
+<p style="Normal" xid="199" props="text-align:left; dom-dir:ltr">- constant names start with letter or underscore (no $ before name)</p>
+<p style="Normal" xid="200" props="text-align:left; dom-dir:ltr">- constants are automatically global</p>
+<p style="Normal" xid="201"><c></c></p>
+<p style="Normal" xid="202" props="text-align:left; dom-dir:ltr">to create a constant, use:  define(name, value, [case-insensitive])</p>
+<p style="Normal" xid="203" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="204" props="text-align:left; dom-dir:ltr">    define("GREETING", "Hello there!");</p>
+<p style="Normal" xid="205" props="text-align:left; dom-dir:ltr">    echo GREETING;  // outputs: "Hello there!"</p>
+<p style="Normal" xid="206"><c></c></p>
+<p style="Normal" xid="207" props="text-align:left; dom-dir:ltr">    define("GREETING", "Hello there!", true);</p>
+<p style="Normal" xid="208" props="text-align:left; dom-dir:ltr">    echo greeting;  // outputs: "Hello there!"</p>
+<p style="Normal" xid="209">----</p>
+<p style="Normal" xid="210" props="text-align:left; dom-dir:ltr">note: you can also use define() to define a constant array</p>
+<p style="Normal" xid="211"><c></c></p>
+<p style="Normal" xid="212" props="text-align:left; dom-dir:ltr">OPERATORS:</p>
+<p style="Normal" xid="213" props="text-align:left; dom-dir:ltr">arithmetic:</p>
+<p style="Normal" xid="214">   +   -   *   /   %   **</p>
+<p style="Normal" xid="215" props="text-align:left; dom-dir:ltr">assignment:</p>
+<p style="Normal" xid="216">   =   +=   -=   *=   /=   %=</p>
+<p style="Normal" xid="217" props="text-align:left; dom-dir:ltr">comparison:</p>
+<p style="Normal" xid="218" props="text-align:left; dom-dir:ltr">   ==   ===   !=   &lt;&gt;   !==   &gt;   &lt;   &gt;=   &lt;=   &lt;=&gt; (-1, 0, 1 depending how x compares w/ y)</p>
+<p style="Normal" xid="219" props="text-align:left; dom-dir:ltr">increment / decrement:</p>
+<p style="Normal" xid="220" props="text-align:left; dom-dir:ltr">   ++$x   $x++   --$x   $x--</p>
+<p style="Normal" xid="221" props="text-align:left; dom-dir:ltr">logical:</p>
+<p style="Normal" xid="222" props="text-align:left; dom-dir:ltr">   and   or   xor   &amp;&amp;   ||   !</p>
+<p style="Normal" xid="223" props="text-align:left; dom-dir:ltr">concatenation:</p>
+<p style="Normal" xid="224">   .   .=</p>
+<p style="Normal" xid="225" props="text-align:left; dom-dir:ltr">array:</p>
+<p style="Normal" xid="226" props="text-align:left; dom-dir:ltr">   + (union)   ==   ===   !=   &lt;&gt;   !==</p>
+<p style="Normal" xid="227" props="text-align:left; dom-dir:ltr">conditional assignment:</p>
+<p style="Normal" xid="228" props="text-align:left; dom-dir:ltr">   $x = expr1 ? expr2 : expr3               $x = expr1 ?? expr2</p>
+<p style="Normal" xid="229" props="text-align:left; dom-dir:ltr">   if expr1 true, then expr2, else expr3    if expr1 exists &amp;&amp; !null, then expr1, else expr2</p>
+<p style="Normal" xid="230"><c></c></p>
+<p style="Normal" xid="231" props="text-align:left; dom-dir:ltr">CONDITIONAL STATEMENTS:</p>
+<p style="Normal" xid="232" props="text-align:left; dom-dir:ltr">   if   if..else   if..elseif..else   switch</p>
+<p style="Normal" xid="233" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="234" props="text-align:left; dom-dir:ltr">    if (condition) {}</p>
+<p style="Normal" xid="235"><c></c></p>
+<p style="Normal" xid="236" props="text-align:left; dom-dir:ltr">    switch ($x) {</p>
+<p style="Normal" xid="237" props="text-align:left; dom-dir:ltr">        case a:</p>
+<p style="Normal" xid="238">            ...</p>
+<p style="Normal" xid="239" props="text-align:left; dom-dir:ltr">	    break;</p>
+<p style="Normal" xid="240" props="text-align:left; dom-dir:ltr">        case b:</p>
+<p style="Normal" xid="241">            ...</p>
+<p style="Normal" xid="242" props="text-align:left; dom-dir:ltr">            break;</p>
+<p style="Normal" xid="243" props="text-align:left; dom-dir:ltr">        default:</p>
+<p style="Normal" xid="244">            ...</p>
+<p style="Normal" xid="245">    }</p>
+<p style="Normal" xid="246">---- </p>
+<p style="Normal" xid="247"><c></c></p>
+<p style="Normal" xid="248" props="text-align:left; dom-dir:ltr">LOOPS:</p>
+<p style="Normal" xid="249" props="text-align:left; dom-dir:ltr">   while   do..while   for   foreach</p>
+<p style="Normal" xid="250" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="251" props="text-align:left; dom-dir:ltr">    while () {}</p>
+<p style="Normal" xid="252"><c></c></p>
+<p style="Normal" xid="253" props="text-align:left; dom-dir:ltr">    do {} while ()</p>
+<p style="Normal" xid="254"><c></c></p>
+<p style="Normal" xid="255" props="text-align:left; dom-dir:ltr">    for ($x=0; $x&lt;=10; $x++) {}</p>
+<p style="Normal" xid="256"><c></c></p>
+<p style="Normal" xid="257" props="text-align:left; dom-dir:ltr">    foreach ($array as $value) {}    </p>
+<p style="Normal" xid="258">----</p>
+<p style="Normal" xid="259"><c></c></p>
+<p style="Normal" xid="260" props="text-align:left; dom-dir:ltr">USER-DEFINED FUNCTIONS:</p>
+<p style="Normal" xid="261" props="text-align:left; dom-dir:ltr">function parameters are naturally loosely typed</p>
+<p style="Normal" xid="262" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="263" props="text-align:left; dom-dir:ltr">    function functionName($fname, $year) {}</p>
+<p style="Normal" xid="264">----</p>
+<p style="Normal" xid="265"><c></c></p>
+<p style="Normal" xid="266" props="text-align:left; dom-dir:ltr">to specify strict PHP to care about data types</p>
+<p style="Normal" xid="267" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="268" props="text-align:left; dom-dir:ltr">&lt;?php declare(strict_types=1);</p>
+<p style="Normal" xid="269" props="text-align:left; dom-dir:ltr">    function functionName(str $fname, int $year) {}</p>
+<p style="Normal" xid="270"><c></c></p>
+<p style="Normal" xid="271" props="text-align:left; dom-dir:ltr">    // return type declaration</p>
+<p style="Normal" xid="272" props="text-align:left; dom-dir:ltr">    function functionName(str $fname, int $year) : str {}</p>
+<p style="Normal" xid="273">?&gt;</p>
+<p style="Normal" xid="274">----</p>
+<p style="Normal" xid="275"><c></c></p>
+<p style="Normal" xid="276" props="text-align:left; dom-dir:ltr">default arguments</p>
+<p style="Normal" xid="277" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="278" props="text-align:left; dom-dir:ltr">    function functionName($fname = "Harold") {}</p>
+<p style="Normal" xid="279">----</p>
+<p style="Normal" xid="280"><c></c></p>
+<p style="Normal" xid="281" props="text-align:left; dom-dir:ltr">pass by reference TO UPDATE A VARIABLE</p>
+<p style="Normal" xid="282" props="text-align:left; dom-dir:ltr">----Example:</p>
+<p style="Normal" xid="283" props="text-align:left; dom-dir:ltr">    function functionName(&amp;$fname) {}</p>
+<p style="Normal" xid="284">----</p>
+<p style="Normal" xid="285"><c></c></p>
+<p style="Normal" xid="286" props="text-align:left; dom-dir:ltr">ARRAYS:</p>
+<p style="Normal" xid="287" props="text-align:left; dom-dir:ltr">define an $array: array("", "", "");</p>
+<p style="Normal" xid="288" props="text-align:left; dom-dir:ltr">count($array)  - get length of $array</p>
+<p style="Normal" xid="289"><c></c></p>
+<p style="Normal" xid="290" props="text-align:left; dom-dir:ltr">to loop through array, use for</p>
+<p style="Normal" xid="291"><c></c></p>
+<p style="Normal" xid="292" props="text-align:left; dom-dir:ltr">ASSOCIATIVE ARRAYS:</p>
+<p style="Normal" xid="293" props="text-align:left; dom-dir:ltr">// like a dictionary</p>
+<p style="Normal" xid="294" props="text-align:left; dom-dir:ltr">$age = array("Peter"=&gt;"35", "Ben"=&gt;"37");</p>
+<p style="Normal" xid="295" props="text-align:left; dom-dir:ltr">$age["Peter"] = "35"</p>
+<p style="Normal" xid="296"><c></c></p>
+<p style="Normal" xid="297" props="text-align:left; dom-dir:ltr">to loop through an associative array, use foreach</p>
+<p style="Normal" xid="298" props="text-align:left; dom-dir:ltr">foreach($age as $key =&gt; $value)</p>
+<p style="Normal" xid="299"><c></c></p>
+<p style="Normal" xid="300" props="text-align:left; dom-dir:ltr">MULTIDIMENSIONAL ARRAYS:</p>
+<p style="Normal" xid="301"><c></c></p>
+<p style="Normal" xid="302" props="text-align:left; dom-dir:ltr">SORTING ARRAY:</p>
+<p style="Normal" xid="303" props="text-align:left; dom-dir:ltr">sort()     - ascending order</p>
+<p style="Normal" xid="304" props="text-align:left; dom-dir:ltr">rsort()    - descending order</p>
+<p style="Normal" xid="305" props="text-align:left; dom-dir:ltr">multidimensional</p>
+<p style="Normal" xid="306" props="text-align:left; dom-dir:ltr">asort()    - ascending order, according to value</p>
+<p style="Normal" xid="307" props="text-align:left; dom-dir:ltr">ksort()    - ascending order, according to key</p>
+<p style="Normal" xid="308" props="text-align:left; dom-dir:ltr">arsort()   - descending order, according to value</p>
+<p style="Normal" xid="309" props="text-align:left; dom-dir:ltr">krsort()   - descending order, according to key</p>
+<p style="Normal" xid="310"><c></c></p>
+<p style="Normal" xid="311" props="text-align:left; dom-dir:ltr">SUPERGLOBALS:</p>
+<p style="Normal" xid="312" props="text-align:left; dom-dir:ltr">   $GLOBAL   $_SERVER   $_REQUEST   $_POST   $_GET   $_FILES   $_ENV   $_COOKIE   $_SESSION</p>
+<p style="Normal" xid="313" props="text-align:left; dom-dir:ltr">$GLOBAL['var_name']    - stores all global variables for any use</p>
+<p style="Normal" xid="314" props="text-align:left; dom-dir:ltr">$_SERVER['name']       - stores info about headers, paths, script locations</p>
+<p style="Normal" xid="315" props="text-align:left; dom-dir:ltr">$_REQUEST[]            - collects data after submission of an HTML form</p>
+<p style="Normal" xid="316" props="text-align:left; dom-dir:ltr">$_POST[]               - collects HTML form data with method="post". also to pass vars</p>
+<p style="Normal" xid="317" props="text-align:left; dom-dir:ltr">$_GET[]                - collects HTML form data with method="get"</p>
+<p style="Normal" xid="318"><c></c></p>
+<p style="Normal" xid="319" props="text-align:left; dom-dir:ltr">REGULAR EXPRESSION:</p>
+<p style="Normal" xid="320" props="text-align:left; dom-dir:ltr">$exp = "/school/i";</p>
+<p style="Normal" xid="321"><c></c></p>
+<p style="Normal" xid="322" props="text-align:left; dom-dir:ltr">preg_match($patt, $str)          - returns 1 of pattern is found, else 0</p>
+<p style="Normal" xid="323" props="text-align:left; dom-dir:ltr">preg_match_all($patt, $str)      - returns # of times the pattern is found</p>
+<p style="Normal" xid="324" props="text-align:left; dom-dir:ltr">preg_replace($patt, $repl, $str) - returns new string where matches have been replaced with string</p>
+<p style="Normal" xid="325"><c></c></p>
+<p style="Normal" xid="326" props="text-align:left; dom-dir:ltr">/ - delimiter</p>
+<p style="Normal" xid="327" props="text-align:left; dom-dir:ltr">modifiers:</p>
+<p style="Normal" xid="328" props="text-align:left; dom-dir:ltr">   i - case-insensitive</p>
+<p style="Normal" xid="329" props="text-align:left; dom-dir:ltr">   m - multiline search</p>
+<p style="Normal" xid="330" props="text-align:left; dom-dir:ltr">   u - UTF-8</p>
+<p style="Normal" xid="331" props="text-align:left; dom-dir:ltr">patterns:</p>
+<p style="Normal" xid="332" props="text-align:left; dom-dir:ltr">   [abc]  - find 1 char from between the brackets</p>
+<p style="Normal" xid="333" props="text-align:left; dom-dir:ltr">   [^abc] - find any char NOT in brackets</p>
+<p style="Normal" xid="334" props="text-align:left; dom-dir:ltr">   [0-9]  - find 1 char from range 0 - 9</p>
+<p style="Normal" xid="335" props="text-align:left; dom-dir:ltr">metacharacters:</p>
+<p style="Normal" xid="336" props="text-align:left; dom-dir:ltr">   |    - find 1 of patterns separated i.e. cat|dog|fish</p>
+<p style="Normal" xid="337" props="text-align:left; dom-dir:ltr">   .    - find 1 instance if any char</p>
+<p style="Normal" xid="338" props="text-align:left; dom-dir:ltr">   ^    - find match as beginning of a string: ^Hello</p>
+<p style="Normal" xid="339" props="text-align:left; dom-dir:ltr">   $    - find match at end of string: World$</p>
+<p style="Normal" xid="340" props="text-align:left; dom-dir:ltr">   \d   - find a digit</p>
+<p style="Normal" xid="341" props="text-align:left; dom-dir:ltr">   \s   - find whitespace char</p>
+<p style="Normal" xid="342" props="text-align:left; dom-dir:ltr">   \b   - find match at beginning or end: \bWORD, WORD\b</p>
+<p style="Normal" xid="343" props="text-align:left; dom-dir:ltr"> \uxxxx - find unicode char specified by hex number</p>
+<p style="Normal" xid="344" props="text-align:left; dom-dir:ltr">quantifiers:</p>
+<p style="Normal" xid="345" props="text-align:left; dom-dir:ltr">   n+       - match any string containing 1+ n</p>
+<p style="Normal" xid="346" props="text-align:left; dom-dir:ltr">   n*       - match any string containing 0+ n</p>
+<p style="Normal" xid="347" props="text-align:left; dom-dir:ltr">   n?       - match any string containing 0 or 1 n</p>
+<p style="Normal" xid="348" props="text-align:left; dom-dir:ltr">   n{x}     - match any string containing sequence of x n's</p>
+<p style="Normal" xid="349" props="text-align:left; dom-dir:ltr">   n{x,y}   - match any string containing sequence of x to y n's</p>
+<p style="Normal" xid="350" props="text-align:left; dom-dir:ltr">   n{x,}    - match any string containing sequence of x+ n's</p>
+<p style="Normal" xid="351" props="text-align:left; dom-dir:ltr">  ba(na){2} - match 'ba' followed by 2 'na''s</p>
+<p style="Normal" xid="352"><c></c></p>
+<p style="Normal" xid="353"><c></c></p>
+<p style="Normal" xid="354"><c></c></p>
+<p style="Normal" xid="355"><c></c></p>
+<p style="Normal" xid="356"><c></c></p>
+<p style="Normal" xid="357"><c></c></p>
+<p style="Normal" xid="358"><c></c></p>
+<p style="Normal" xid="359"><c></c></p>
+<p style="Normal" xid="360"><c></c></p>
+<p style="Normal" xid="361"><c></c></p>
+<p style="Normal" xid="362"><c></c></p>
+<p style="Normal" xid="363"><c></c></p>
+<p style="Normal" xid="364"><c></c></p>
+<p style="Normal" xid="365"><c></c></p>
+<p style="Normal" xid="366"><c></c></p>
+<p style="Normal" xid="367"><c></c></p>
+<p style="Normal" xid="368"><c></c></p>
+<p style="Normal" xid="369"></p>
+</section>
+</abiword>
