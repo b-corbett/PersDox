@@ -1,0 +1,78 @@
+Good sources for CSS, HTML, JS:
+   - W3Schools
+   - MDN Guide
+   - CSS-tricks
+
+1. What does 'white-space: nowrap' do?
+   - normal | nowrap | pre | pre-line | pre-wrap | initial | inherit
+   - 'nowrap': sequences of whitespace collapse into single whitespace
+               text never wraps to next line until <br> is encountered
+2. What does 'text-indent' do?
+   - indents just the FIRST line of a text BLOCK
+   - other values can modify this
+3. 'background' short-hand?
+   - background: bg-color bg-image bg-pos/bg-size bg-repeat bg-origin bg-clip bg-attachment
+   - not every value must be used, but this order is W3 standard
+4. What are box types of an element, and how are they specified?
+   - 2 types of box types, outer display and inner display:
+      - outer display types: block, inline, block-inline, etc.
+      - inner display types: flex, grid, table, etc.
+   - box types are specified by the 'display' property
+5. What is the 'clear' property when dealing with other floated elements?
+   - none | left | right | both
+   - will force element to not be beside a floated element
+6. Do pseudo-elements ':first-line' and :'first-letter' apply to both inline and block elements?
+   - NO, these two pseudo-elements only apply to block elements
+7. Will any of the border properties have any effect is 'border-style' is not set?
+   - No, unless border-style is specified, no other border properties will have any effect
+8. What is the default value for the 'background-attachment' property?
+   - scroll (DEFAULT) | fixed | local
+9. When the position property is 'fixed,' what is the element fixed relative to?
+   - static (DEFAULT) | relative | absolute | fixed | sticky
+      - static:   renders in order of appearance in document flow
+		  'top', 'right', 'bottom', 'left', & 'z-index' properties have no effect
+      - relative: positioned relative to it's normal position of static, but then offset by the use of
+                     'top', 'right', 'bottom', 'left', 'z-index' 
+		  other elements act as if this element is static
+      - absolute: element is completely removed from the normal document flow
+                  positioned relative to it's closest non-static positioned ancestor, else initial containing block
+                  'top', 'right', 'bottom', 'left', 'z-index' determine final position
+      - fixed:    element is removed from the normal document flow
+                  positioned relative to the viewport
+		  'top', 'right', 'bottom', 'left' determine final position
+      - sticky:   position according to normal document flow (static) and offset with 'top', 'right', 'bottom', 'left'
+                  becomes fixed relative to scrolling ancestor crossing a threshold
+10. What is an elements margin specified by percentage relative to?
+    - it's containing element
+11. What property deals with 'background' and 'border' for empty cells in a table?
+    - 'empty-cells'
+    - show | hide | initital | inherit
+12. What order do the pseudo-classes have to be set in?
+    - :link --> :visited --> :hover --> :active
+13. How do you calculate the total width of an element?
+    - width + left padding + right padding + left border + right border (+ left margin + right margin) 
+
+-----
+
+1. background-origin: padding-box | content-box | border-box
+   background-clip:   "                "                   "
+2. Attribute selector
+   - div[title="blue"]  - exactly "blue"
+   - div[title|="blue"] - exactly "blue" OR "blue-..."
+   - div[title*="blue"] - contains "blue" anywhere
+   - div[title~="blue"] - contains "blue" in the list of values
+   - div[title^="blue"] - starts with "blue"
+   - div[title$="blue"] - ends with "blue"
+3. Element selectors
+   - div p   - all p descended from a div
+   - div > p - all p that are children of a div
+   - div + p - all p that are adjacent siblings to div
+   - div ~ p - all p that are general sibilings to div
+
+
+
+
+
+
+
+
