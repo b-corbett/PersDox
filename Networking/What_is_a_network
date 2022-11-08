@@ -1,46 +1,7 @@
 - A network is an interconnection of multiple devices (hosts/nodes) for sending/receiving data
   * Open system: connected to network, ready for communication
   * Closed system: not connected to network, can't be communicated with
-  
-- There are devices whose job is to help with the communcation between hosts:
-  * Router (wired/wireless)
-  * Switch
-  * Hub
-  * Bridge (wired/wireless)
-  
-- Topologies are the physical layout of a network
-  * Star - all devices are connected through a hub (central node)
-    ~ total number of links: N
-    ~ total number of ports: N
-  * Point-to-point - two devices connected directly to each other
-  * Ring - each device connects to two neighboring device
-  * Bus - each device connects to a single backbone via drop lines
-    ~ transmits data down the backbone and shoots off into the drop lines to each device
-    ~ total number of links: 1 backbone, N drop lines
-  * (Daisy) Chain
-  * Mesh - each device is directly connected to every other device
-    ~ number of ports for each device: (N-1)
-    ~ total number of ports: N*(N-1)
-    ~ total number of links: N(N-1)/2
-  * Tree
-  * Hybrid
 
-- Unique identifiers of a network
-  * Hostname - Unique name for each device in a network (cmd: hostname)
-  * Internet Protocol (IP) Address - Logical network address for each device (cmd: hostname -I)
-    ~ IPv4 - 32-bits  (4-bytes)  = 2^32 addresses available  172.58.4.242
-    ~ IPv6 - 128-bits (16-bytes) = 2^128 addresses available 2001:0db8:85a3:0000:0000:8a2e:0370:7334 or 2001:db8:85a3:::8a2e:370:7334 
-  * Media Access Control (MAC) Address - Physical address associated with each devices Network Interface Card (NIC)
-    ~ 48-bits (6-bytes) 00:1B:44:11:3A:B7
-  * Port - logical channel through data can be sent/received
-    ~ Any host may have multiple apps running, each idenitified by the port number on which they are running
-    ~ 16-bits (2-bytes) 
-      > well known: 0 - 1023
-      > registered: 1024 - 49151
-      > ephemeral: 49152 - 65535
-  * Socket - combination of IP address and Port number 
-    ~ IPAddr-A:Port-A
-    
 Network criteria:
 - Performance - measured in terms of
   * Transit time - message travel time beween two devices
@@ -51,58 +12,5 @@ Network criteria:
   * Integrity during catastrophe
 - Security
   * Protection from unauthorized access
-  
-Types of networks:
-- LAN (Local Area Network) - smallest area
-- MAN (Metropolitan Area Network) - larger area than LAN
-- WAN (Wide Area Network) - largest of all
-- less known: PAN (Personal Area)    SAN (Storage Area)    EPN (Enterprise Private)    VPN (Virtual Private)
-
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
