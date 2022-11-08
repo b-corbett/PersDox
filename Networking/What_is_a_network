@@ -77,6 +77,24 @@ Types of networks:
 - WAN (Wide Area Network) - largest of all
 - less known: PAN (Personal Area)    SAN (Storage Area)    EPN (Enterprise Private)    VPN (Virtual Private)
 
+TCP/IP:
+- Instead of the 7 layer OSI model, the TCP/IP model is a more concise 4 layers
+  * 1. Application layer
+  * 2. Transport layer
+  * 3. Internet layer - parallels network layer
+  * 4. Network Access layer - physical / data link layer combo
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
