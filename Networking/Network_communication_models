@@ -53,7 +53,41 @@
     
     TCP/IP:
 - Instead of the 7 layer OSI model, the TCP/IP model is a more concise 4 layers
-  * 1. Application layer
-  * 2. Transport layer
+  * 1. Application layer - application, presentation, session layers of the OSI
+    ~ Node-tonode communication and controls user interface specifications
+    ~ HTTP / HTTPS (Hypertext Transfer Protocol)
+      > manages communications between browsers and servers
+      > HTTP-Secure is HTTP combined with SSL (Secure Socket Layer) 
+    ~ SSH (Secure Shell)
+      > maintains encrypted connections
+      > secure session over TCP/IP
+    ~ NTP (Network Time Protocol)
+      > syncs clocks on all computers
+    ~ FTP   ~ TFTP   ~ Telnet   ~ SMTP   ~ SNMP   ~ DNS   ~ DHCP   ~ NFS
+  * 2. Transport layer (Host-to-Host) - end-to-end, error-free delivery
+    ~ TCP (Transmission Control Protocol)
+      > provides reliable and error-free communication between end systems
+      > sequencing and segmentation of data
+      > controls flow of data
+    ~ UDP (User Datagram Protocol)
+      > connectionless, "unreliable", just sends it
   * 3. Internet layer - parallels network layer
+    ~ logical transmission of data over entire network
+    ~ IP (Internet Protocol)
+      > delivers packets from source host to destination host by looking at IP addresses in headers
+      > IPv4 & IPv6
+    ~ ICMP (Internet Control Message Protocol)
+      > responsible for providing hosts with info about network problems
+    ~ ARP (Address Resolution Protocol)
+      > finds hardware address (MAC) from a logical address (IP)
   * 4. Network Access layer - physical / data link layer combo
+    ~ ARP
+
+
+
+
+
+
+
+
+
