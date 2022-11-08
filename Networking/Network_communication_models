@@ -1,0 +1,59 @@
+- 7 Layer OSI Model
+  * 7. Application Layer
+  * 6. Presentation Layer
+    ~ 
+  * 5. Session Layer
+    ~ establishment of connection, maintenance of session, authentication, security
+  * 4. Transport Layer
+    ~ responsible for end-to-end delivery of the complete message
+    ~ acknowledges successful transmission or resends if error
+  * 3. Network Layer
+    ~ works for transmission of data from one host to another in different networks
+    ~ IP addresses are used here
+  * 2. Data Link Layer
+    ~ make sure node-to-node data transfer is error free over the physical layer
+    ~ MAC addresses are used here
+  * 1. Physical Layer
+    ~ physical connections between devices
+    ~ transmits bits via cables
+- Protocols - set of rules / algorithms define how two entities can communicate
+  * Each OSI layer has different protocols defined
+    ~ TCP     ~ IP      ~ UDP      ~ ARP      ~ DHCP     ~ FTP
+    
+- Communication of the unstructured raw data streams over a physical medium
+  - Mechanical / electrical aids to maintain and transmit BITS across physical connections
+  - Technical Transmission Processes:
+    * Electrical signals
+    * Optical signals (optical fiber, laser)
+    * Electromagnetic waves (wifi)
+    * Sound
+  - Devices at the physical layer:
+    * Hubs, switches, routers, Ethernet
+    * Antenna
+    * Amplifier
+    * Plug and socket
+    * Repeater
+    * Stroke
+    * Transceiver
+    * T-bar
+    * Terminator
+  - Different methods of bit transmission require different methods of encoding bits in a signal
+  - Configurations:
+    * Point-to-point: link fully dedicated to carry data between two devices  0-----------------------0
+    * Multi-point: link through mulitple devices  0----------o<======8=====>o----0-------------0
+  - Modes of transmission medium:
+    * Simplex: 1 device sends data, 1 device receives data (keyboards, radio/TV broadcasting)
+    * Half-duplex: 2 send & receive data, but only one at a time (walkie-talkie)
+    * Full-duplex: 2 send & receive data simultaneously (phones, chats)    
+    
+    
+    
+    
+    
+    
+    TCP/IP:
+- Instead of the 7 layer OSI model, the TCP/IP model is a more concise 4 layers
+  * 1. Application layer
+  * 2. Transport layer
+  * 3. Internet layer - parallels network layer
+  * 4. Network Access layer - physical / data link layer combo
