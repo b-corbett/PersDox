@@ -1,5 +1,35 @@
 There are devices whose job is to help with the communcation between hosts:
 - Router (wired/wireless)
-- Switch
+  * network layer (3)
+  * routes packets based on IP addresses
+  * have an updating routing table
+  * connect LANs and WANs
+- Repeater
+  * regenerate the signal over network before signal becomes weak or corrupted to extend length
+  * they don't amplify the signal, they recreate bit by bit
+  * 2-port device
 - Hub
+  * basically multi-port repeater
+  * no filtering happening, all signals are sent to all connected devices
+  * no intelligence
 - Bridge (wired/wireless)
+  * operates at the data link layer (2)
+  * also a repeater, but filters based on MAC addresses of src and dest
+  * 2-port device
+- Switch
+  * operates at data link layer (2)
+  * multi-port bridge that can boost efficiency & performance
+  * can error check and filter based on MAC address
+- Gateway
+  * passage to connect two networks, protocol converters
+  * operate at any network layer
+- Brouter
+  * bridge and router combo
+  * data link (2) or network layer (3) 
+  * router: routes intelligently, bridge: filtering traffic
+- NIC (Network Interface Card)
+  * connects device to the network
+  * unique ID called MAC address
+  * data link (2) and physical (1) 
+  
+
