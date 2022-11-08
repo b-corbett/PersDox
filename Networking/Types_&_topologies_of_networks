@@ -1,0 +1,22 @@
+Types of networks:
+- LAN (Local Area Network) - smallest area
+- MAN (Metropolitan Area Network) - larger area than LAN
+- WAN (Wide Area Network) - largest of all
+- less known: PAN (Personal Area)    SAN (Storage Area)    EPN (Enterprise Private)    VPN (Virtual Private)
+
+Topologies are the physical layout of a network
+- Star - all devices are connected through a hub (central node)
+  * total number of links: N
+  * total number of ports: N
+- Point-to-point - two devices connected directly to each other
+- Ring - each device connects to two neighboring device
+- Bus - each device connects to a single backbone via drop lines
+  * transmits data down the backbone and shoots off into the drop lines to each device
+  * total number of links: 1 backbone, N drop lines
+- (Daisy) Chain
+- Mesh - each device is directly connected to every other device
+  * number of ports for each device: (N-1)
+  * total number of ports: N*(N-1)
+  * total number of links: N(N-1)/2
+- Tree
+- Hybrid
