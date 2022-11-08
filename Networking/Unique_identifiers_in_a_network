@@ -1,0 +1,15 @@
+Unique identifiers of a network
+- Hostname - Unique name for each device in a network (cmd: hostname)
+- Internet Protocol (IP) Address - Logical network address for each device (cmd: hostname -I)
+  * IPv4 - 32-bits  (4-bytes)  = 2^32 addresses available  172.58.4.242
+  * IPv6 - 128-bits (16-bytes) = 2^128 addresses available 2001:0db8:85a3:0000:0000:8a2e:0370:7334 or 2001:db8:85a3:::8a2e:370:7334 
+- Media Access Control (MAC) Address - Physical address associated with each devices Network Interface Card (NIC)
+  * 48-bits (6-bytes) 00:1B:44:11:3A:B7
+- Port - logical channel through data can be sent/received
+  * Any host may have multiple apps running, each idenitified by the port number on which they are running
+  * 16-bits (2-bytes) 
+    ~ well known: 0 - 1023
+    ~ registered: 1024 - 49151
+    ~ ephemeral: 49152 - 65535
+- Socket - combination of IP address and Port number 
+  * IPAddr-A:Port-A
