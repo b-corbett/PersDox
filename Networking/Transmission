@@ -1,0 +1,27 @@
+Transmission media is the physical path between transmitter and receiver
+- is the channel through which data is sent from one place to another
+
+Types of transmission media
+- Guided media (wired / bounded) - high speed, secure, used for comparatively shorter distances
+  * Twisted Pair Cable - most common
+    > Unshielded Twisted Pair (UTP)
+    > Shielded Twisted Pair (STP)
+  * Coaxial Cable
+  * Optical Fiber Cable
+  * Stripline
+  * Microstripline
+- Unguided media
+  * Space
+    > Radio waves
+    > Microwaves
+    > Infrared
+
+Transmission modes
+- Simple
+  * unidirectional
+- Half-duplex
+  * bidirectional not simultaneous
+- Full-duplex
+  * bidirectional simultaneous 
+
+                              
