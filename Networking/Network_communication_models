@@ -12,10 +12,12 @@
     ~ IP addresses are used here
   * 2. Data Link Layer
     ~ make sure node-to-node data transfer is error free over the physical layer
+     > framing, error control, flow control
     ~ MAC addresses are used here
   * 1. Physical Layer
     ~ physical connections between devices
     ~ transmits bits via cables
+    ~ topologies
 - Protocols - set of rules / algorithms define how two entities can communicate
   * Each OSI layer has different protocols defined
     ~ TCP     ~ IP      ~ UDP      ~ ARP      ~ DHCP     ~ FTP
