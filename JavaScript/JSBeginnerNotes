@@ -1,0 +1,92 @@
+Output
+- Any number of scripts in HTML document
+- In <head> or <body> tags, or both; script behaves as if it was written out where the tag is
+- Place scripts at bottom of <body> because script interpretation slows down display speed
+- JavaScript display choices
+  * innerHTML
+  * document.write()
+    > using this after HTML doc has loaded will delete all existing HTML
+    > just for testing
+  * window.alert()
+  * console.log()
+- a window object is the global scope object; window = global scope
+
+Statements
+- executed by browser
+- keywords cannot be used as variable names
+- numbers can be written a float or integer automaticallu
+
+Variables
+- var, let, const
+- declare many variables on one line: 
+  * let var1 = 3, var2 = 49; << can also span mulitple lines
+- treats dollar sign ($) as a letter, CAN be used in variable names
+
+Using var to declare variables
+- can be redeclared anywhere in program
+- redeclaring in different scopes will redeclare everywhere
+- used for global scope
+
+Using let to declare variables
+- cannot be redeclared within same scope
+- redeclaring in different scopes will not effect other scoped variables
+- used for block scope
+
+Using const to declare variables
+- cannot be redeclared or reassigned (value will always be the same)
+- used for block scope
+- must be defined when declared
+- defines a constant REFERENCE TO a value
+- CANNOT reassign:
+  * value     * array     * object
+- CAN change:
+  * elements of array     * properties of object
+
+Operators
+- arithmetic
+  +   -   *   **    /    %     ++     --
+- assignment
+  =   +=    - =     *=    /=    %=    **=
+- comparison
+  ==    ===   !=    !==   >   <   >=    <=    ?
+- logical
+  &&    ||    !
+- type
+  typeof    instanceof
+- bitwise
+  &   |    ~    ^     <<    >>      >>>
+
+Strings
+- built-in .length property of strings
+- use concatenation to break up string to multiple lines
+- comparing two objects will always be false
+
+String Methods
+- string method don't change original string but return new strings; strings are immutable
+  
+String Templates
+- back ticks (``) to define a string
+- any quotes can be used inside
+- multiline is allowed
+- INTERPOLATION
+  * ${...}
+  * `Welcome ${person1Name} and ${person2Name}!`;
+    > string and expression substitution
+    
+Numbers
+- number + number = number
+- string + string = string
+- number + string = string
+- string + number = string
+- works from left to right i.e. 10+20+"30" = 30+"30" = "3030" 
+- with any other numeric operation and string involved, they will convert to numbers
+- number.toString(16) - converts number to base 16
+- numbers accurate up to 15 digits, stored in 64-bit floating-point format [(2^53)-1 - -(2^53)-1]
+- BigInt data type: '15n'
+
+Arrays - https://www.w3schools.com/js/js_array_iteration.asp
+
+
+
+
+
