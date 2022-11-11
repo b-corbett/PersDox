@@ -86,7 +86,36 @@ Numbers
 
 Arrays - https://www.w3schools.com/js/js_array_iteration.asp
 
+Date
+- new Date(milliseconds)
+- new Date(date string)
 
+Loops
+- for/in - loops through properties (keys) of an object
+  for (key in object) {object[key]}
+- Array.foreach(myFunction)
+  myFunction(value, index, array)
+- for/of - loops through values in an iterable
+  for (i of cars) {cars[i]}
+
+Comparisons
+- if comparing number with string, will convert string to number
+- nullish coalescing operator - returns first if arg is null / undefined, else returns second
+  * name = null, text = "missing";
+    result = name ?? text;
+- optional chaining operator - instead of error, will return undefined if object is undef or null
+  * const car = {model:"Fiat"}
+    var variable = car?.name;   // no name property so returns undefined
+
+Labels
+- label:
+  statements
+- break statement w/o label can only jump out of loop or switch
+                  w/ label it can jump out of any code block at all
+
+Iterables
+
+         
 
 
 
