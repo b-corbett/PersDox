@@ -113,9 +113,106 @@ Labels
 - break statement w/o label can only jump out of loop or switch
                   w/ label it can jump out of any code block at all
 
-Iterables
+Sets - unique values
+- new Set()
+- add(), delete(), has(), forEach(), values(), size
 
+Maps
+- set methods + get(), entries() (iterator with [key, value] pairs in Map
+- key-value pairs where keys can be any datatype
+- remembers original insertion order of keys
+
+Typeof
+- constructor property returns constructor function for all JS variables
+  * use this to find out if an object is an array or date
+
+Type Conversion
+- Number(), parseFloat(), parseInt()
+- unary + operator
+  * converts string to number
+  * let y = "5";
+    let x = + y;
+- String(), toString()
+- toExponential(), toFixed(), toPrecision()
+
+Error Objects
+- properties: name, message
+  * EvalError - occurred in the eval() function DEPRECATED
+  * RangeError - number "out of range"
+  * ReferenceError - illegal reference
+  * SyntaxError - syntax error
+  * TypeError - type error
+  * URIError - error in encodeURI()
          
+Scope
+- Block scope
+  * let & const
+  * var CANNOT have block scope
+- Local scope
+  * variables declared in function, are LOCAL to the function (can only be accessed inside of it)
+- Function scope
+  * when defined inside a function, that variable is invisible from outside of function
+  * var, let, & const all adhere entirely to function scope 
+- Automatically global
+  * any variable assignment anywhere that has not been declared is automatically global
+  
+Hoisting
+- JS moves all declarations to the top of the current scope, which means
+  * variables can be used before theyre declared
+- when defined with let and const, they are hoisted but not initialized
+  * block is aware of the variable, but cant be used until is declared
+- only declarations are hoisted, not initializations
+
+this
+- reference to the current object / function depending on context 
+- object, bind(), apply() & call(), object method, global scope
+
+Arrow function - let myFunction = (a, b) => a * b;
+  * before: hello = function() {return "Hello World!";}
+  * after:  hello = () => {return "Hello World!";}
+  *         hello = () => "Hello World!";  // only if function has one statement
+  *         hello = (val) => "Hello " + val;
+  *         hello = val => "Hello " + val;  // only if function takes one parameter
+- this - when used in regular function, refers to object that calls the function
+         when used in arrow function, refers to 'owner' of the function
+
+Class
+- constructor()
+
+Modules
+- export a function / variable from any file - named & default
+Named
+- Inline
+  export const name = "Jesse"
+  export const age = 40
+- All at once
+  const name = "Jesse"
+  const age = 40
+  export {name, age}
+Default - one export in a file
+- const message = () => {}
+  export default message
+Import named
+- import {name, age} from 'file'
+Import default
+- import message from 'file'
+
+JSON
+- often used when server sends data to web page
+- names require double quotes
+- JSON.parse() - convert JSON to JS object
+
+Style Guide
+- At W3
+  * camelCase for variables / functions
+  * use 2 spaces for indentation
+  * Globals and constants in UPPERCASE
+  * hyphens are not allowed in JS names
+
+Best practices
+
+
+
 
 
 
