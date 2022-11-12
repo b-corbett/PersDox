@@ -158,9 +158,9 @@ Scope
   
 Hoisting
 - JS moves all declarations to the top of the current scope, which means
-  * variables can be used before theyre declared
+  * variables & functions can be used before theyre declared
 - when defined with let and const, they are hoisted but not initialized
-  * block is aware of the variable, but cant be used until is declared
+  * block is aware of the variable / function, but cant be used until is declared
 - only declarations are hoisted, not initializations
 
 this
@@ -201,6 +201,7 @@ JSON
 - often used when server sends data to web page
 - names require double quotes
 - JSON.parse() - convert JSON to JS object
+- JSON.stringify() - converts JS object to JSON-formatted string
 
 Style Guide
 - At W3
@@ -210,6 +211,61 @@ Style Guide
   * hyphens are not allowed in JS names
 
 Best practices
+- avoid global variables, new, ==, eval()
+- initialize variables when declared
+- declare objects / arrays with const
+- assign default values to parameters
+- if (typeof Obj !== "undefined" && Obj !== null) {}
+
+Accessors
+- getters and setters
+- Object.defineProperty()
+
+Custom Iterables
+
+Function Parameters
+- function sum(...args) = sum(1, 2, 3, 6, 45, 3, 5)
+- arguments object
+
+===========================
+// This is a function constructor:
+function myFunction(arg1, arg2) {
+  this.firstName = arg1;
+  this.lastName  = arg2;
+}
+
+// This creates a new object
+const myObj = new myFunction("John", "Doe");
+
+// This will return "John"
+myObj.firstName;
+================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
