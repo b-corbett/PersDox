@@ -14,13 +14,14 @@ Output
 Statements
 - executed by browser
 - keywords cannot be used as variable names
-- numbers can be written a float or integer automaticallu
+- numbers can be written a float or integer automatically
 
 Variables
 - var, let, const
 - declare many variables on one line: 
   * let var1 = 3, var2 = 49; << can also span mulitple lines
 - treats dollar sign ($) as a letter, CAN be used in variable names
+- variables declared without a declaration keyword are always global, no matter where declared
 
 Using var to declare variables
 - can be redeclared anywhere in program
@@ -161,7 +162,8 @@ Hoisting
   * variables & functions can be used before theyre declared
 - when defined with let and const, they are hoisted but not initialized
   * block is aware of the variable / function, but cant be used until is declared
-- only declarations are hoisted, not initializations
+- only declarations are hoisted, not initializations  
+- class declarations are not hoisted
 
 this
 - reference to the current object / function depending on context 
@@ -178,6 +180,8 @@ Arrow function - let myFunction = (a, b) => a * b;
 
 Class
 - constructor()
+- for inheritance, use the 'extends' keyword
+- super() refers to the parent classes constructor
 
 Modules
 - export a function / variable from any file - named & default
@@ -219,14 +223,23 @@ Best practices
 
 Accessors
 - getters and setters
+- you can use the 'get' and 'set' keywords
+  * get name() {} ; set name(name) {}
+  * when using the getter, do not use parantheses to get the value
+    > obj.name
+  * when using the setter, do not use parantheses
+    > obj.name = ...
+  * the getter/setter method names cannot be the same name as the property
+    > you could use an _ to separate the two
 - Object.defineProperty()
 
 Custom Iterables
 
 Function Parameters
 - function sum(...args) = sum(1, 2, 3, 6, 45, 3, 5)
-- arguments object
-
+  * 'arguments' object
+- function sum(x, y = 10)
+  * default values
 ===========================
 // This is a function constructor:
 function myFunction(arg1, arg2) {
@@ -240,11 +253,59 @@ const myObj = new myFunction("John", "Doe");
 // This will return "John"
 myObj.firstName;
 ================================
+Arguments are passed by value
+- locations of the arguments are unknown therefore original can't be changed
+- just the value at that location is passed
+Objects are passed by reference
+- they will behave as passed by reference therefore original will be changed 
 
+call(), apply(), bind()
+call()
+- an object can use a method that belongs to another object
+- can be used to invoke a method with an owner object as an argument
+- if Person object has a method, and Person1 object doesnt:
+  * Person.methodName.call(Person1)
+  * Person.methodName.call(Person1, param1, param2)
+apply()
+- similar to call(), but for array arguments
+  * Person.methodName.call(Person1, [param1, param2])
+bind()
+- an object can borrow a method from another object
+- when methods are used as callback, 'this' is lost. this solves that
 
+Callback functions
+- great for asynchronous functions when one function has to wait for another to finish before executing
 
+Asynchronous functions
+- instead of using callback functions, use Promises
+Promise
+- "producing code" is code that takes some time
+- "consuming code" is code that must wait for the result
+- Promise object links producing and consuming code
+  * contains both the producing code and calls to the consuming code
+- Promise object can be "Pending", "Fulfilled", "Rejected"
+- supports two properties: state and result
+  * during "Pending": result = undefined
+  * during "Fulfilled": result = some value
+  * during "Rejectedd": result = error object
+===============
+let myPromise = new Promise(function(myResolve, myReject) {
+  let x = 0;
 
+// The producing code (this may take some time)
 
+  if (x == 0) {
+    myResolve("OK");
+  } else {
+    myReject("Error");
+  }
+});
+
+myPromise.then(
+  function(value) { /* code if successful */ },
+  function(error) { /* code if error */ }  
+);
+===============
 
 
 
