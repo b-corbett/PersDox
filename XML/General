@@ -30,7 +30,7 @@ Namespaces
 - prefixes need to be defined with a namespace
   * https://www.w3schools.com/xml/xml_namespaces.asp
   
-XMLHttpRequest object
+XMLHttpRequest object (https://www.w3schools.com/xml/ajax_xmlhttprequest_send.asp)
 - object used to request data from a web server
 - allows you to
   * update web page without reloading it
@@ -44,6 +44,8 @@ xmlhttpReq.onreadystatechange = function () {     // specify function to execute
     document.getElementById("el_id").innerHTML = xmlhttpReq.responseText;    // common use
   }                                                                           // .responseXML returns as XML DOM
 };
+xmlhttpReq.open("GET", "filename.txt?t=" + Math.random(), true);   //open(method, url, async)
+xmlhttpReq.send();
 =================
 
 Parser (https://www.w3schools.com/xml/xml_parser.asp)
