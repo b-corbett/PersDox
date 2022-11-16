@@ -1,3 +1,7 @@
+========
+AJAX, jQuery
+========
+
 Output
 - Any number of scripts in HTML document
 - In <head> or <body> tags, or both; script behaves as if it was written out where the tag is
