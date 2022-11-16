@@ -307,6 +307,27 @@ myPromise.then(
 );
 ===============
 
+Async & Await
+- make promises easier to write
+ * async makes function return a Promise
+ * await makes function wait for a Promise
+   > async function myFunction() { return "Hello"; }
+     is equivalent to
+     function myFunction() { return Promise.resolve("Hello"); }
+     myFunction().then();
+- await can only be used inside an async function
+  * await makes a function pause execution and wait for a resolved promise
+  * let value = await promise
+===============================
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve, reject) {          // resolve & reject are predefined
+    resolve("Good");
+  });
+  return await myPromise;
+}
+========================
+
+HTML Document Object Model (DOM)
 
 
 
