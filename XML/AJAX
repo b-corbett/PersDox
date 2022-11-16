@@ -1,0 +1,5 @@
+Asynchronous JavaScript And XML
+- Combination of:
+  * browser built-in XMLHttpRequest object (requesting data from server)
+  * JS and HTML DOM (display / use the data)
+  
