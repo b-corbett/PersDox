@@ -1,0 +1,56 @@
+Syntax
+- must contain one root element which is the parent of all other elements
+- XML Prolog - optional, but must come first in the document
+  * <?xml version="1.0" encoding="UTF-8" ?>
+- all elements must have a closing tag
+- white-space is preserved in XML
+
+Elements
+- empty elements can be closed with a self-closing tag
+  * <element />
+  * they can have attributes
+- naming rules:
+  * case-sensitive
+  * must start with underscore or letter
+  * cannot start with 'xml'
+  * can contain letters, digits, hyphens, underscores, periods
+  * cannot contain spaces
+- it is extensible, given that the program knows what it's looking for, adding information shouldn't break apps
+
+Attributes
+- some cons
+  * one attribute cannot contain multiple values
+  * cannot contain tree structure
+  * not easily expandable
+- metadata about the elements should be stored as attributes, data itself are elements
+
+Namespaces
+- name conflicts (<table> for html, user-defined <table> for xml) area voided using prefixes
+  * html table: <h:table>       xml table: <f:table>
+- prefixes need to be defined with a namespace
+  * https://www.w3schools.com/xml/xml_namespaces.asp
+  
+XMLHttpRequest object
+- object used to request data from a web server
+- allows you to
+  * update web page without reloading it
+  * request / receive data from a server after page has loaded
+  * send data to server in the background
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
