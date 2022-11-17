@@ -33,7 +33,7 @@
 - HttpRequest
 
 ## [jQuery]() 
->"write less, do more" JavaScript library
+>HTML DOM Manipulation JavaScript library
 
 ## [JSON]() *- JavaScript Object Notation*
 >text format for storing / transporting data
