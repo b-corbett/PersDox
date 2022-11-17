@@ -18,7 +18,6 @@
 
 ## [XML]() *- eXtensible Markup Language*
 >data markup language
-- HttpRequest
 - Parser
 - XML DOM
 - XPath
@@ -31,6 +30,7 @@
 
 ## [AJAX]() *- Asynchronous JavaScript And XML*
 >live server communication framework
+- HttpRequest
 
 ## [jQuery]() 
 >"write less, do more" JavaScript library
