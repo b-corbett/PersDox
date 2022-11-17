@@ -1,4 +1,4 @@
-Asynchronous JavaScript And XML
+Asynchronous JavaScript And XML (https://www.w3schools.com/xml/ajax_xmlhttprequest_send.asp)
 - Combination of:
   * browser built-in XMLHttpRequest object (requesting data from server)
   * JS and HTML DOM (display / use the data)
