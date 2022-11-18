@@ -25,10 +25,12 @@ Attributes
 - metadata about the elements should be stored as attributes, data itself are elements
 
 Namespaces
-- name conflicts (<table> for html, user-defined <table> for xml) area voided using prefixes
+- name conflicts (<table> for html, user-defined <table> for xml) voided using prefixes
   * html table: <h:table>       xml table: <f:table>
-- prefixes need to be defined with a namespace
-  * https://www.w3schools.com/xml/xml_namespaces.asp
+- prefixes need to be defined with a namespace (https://www.w3schools.com/xml/xml_namespaces.asp)
+- the namespace can be defined by an 'xmlns' attribute in the start tag or in the XML root element
+  * 'xmlns:prefix="URI"'
+- namespaces are not used by the parser to look up information, just to give it a unique name
   
 XMLHttpRequest object (https://www.w3schools.com/xml/ajax_xmlhttprequest_send.asp)
 - object used to request data from a web server
