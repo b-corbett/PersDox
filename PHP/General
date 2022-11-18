@@ -20,5 +20,5 @@
 13. PHP source code cannot be viewed from the browser
 14. $_REQUEST holds the contents of:
   $_GET    $_POST    $_COOKIE
-  
+15. A MySQL connection will auto close at the end of a script
 
