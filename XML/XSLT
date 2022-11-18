@@ -20,11 +20,11 @@ eXtensible Stylesheet Language Transformation
 ==================
 
 ======= cdcatalog.xsl ==========
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>                          // all xml documents need this declaration
 
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  <xsl:template match="/">                     <!--  -->
-    <html>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">       // defines that this doc is an XSLT stylesheet
+  <xsl:template match="/">                     /* match associates template w/ an XML element or the whole document ("/").
+    <html>                                        defines how to output XML data using HTML elements and how to style them */
       <body>
       <h2>CD Collection</h2>
         <table border="1">
@@ -32,11 +32,14 @@ eXtensible Stylesheet Language Transformation
             <th>Title</th>
             <th>Artist</th>
           </tr>
-          <xsl:for-each select="catalog/cd">
-            <tr>
-              <td><xsl:value-of select="title" /></td>
-              <td><xsl:value-of select="artist" /></td>
-            </tr>
+          <xsl:for-each select="catalog/cd[price>10]">    // using XPath loop through each <cd>, on condition, that is a child of <catalog>
+            <xsl:sort select="artist" />            // placed just inside of for loop, self-closing, sort by artist
+            <xsl:if test="price &gt; 10">            // can use for conditional display instead of in <for-each> tag
+              <tr>
+                <td><xsl:value-of select="title" /></td>       // of each <cd> it will output the value of the <title> element, XPath
+                <td><xsl:value-of select="artist" /></td>      // of each <cd> it will output the value of the <artist> element, XPath
+              </tr>
+            </xsl:if>                           // <choose> <when></when>* <otherwise></otherwise> </choose> for if..else
           </xsl:for-each>
         </table>
       </body>
@@ -44,6 +47,26 @@ eXtensible Stylesheet Language Transformation
   </xsl:template>
 </xsl:stylesheet>
 ===============================
+
+- Can let JavaScript convert the XML to XHTML (https://www.w3schools.com/xml/xsl_client.asp)
+- Or let PHP / ASP convert XML to XHTML (https://www.w3schools.com/xml/xsl_server.asp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
