@@ -26,7 +26,7 @@
 - XLink
 - XHTML
 - DTD
-- Schema 
+- Schema (XSD)
 
 ## [AJAX]() *- Asynchronous JavaScript And XML*
 >live server communication framework
