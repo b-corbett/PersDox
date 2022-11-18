@@ -10,7 +10,8 @@
   INSERT INTO Customers VALUES ()
 6. Create an alias for a column
   SELECT columnname AS alias FROM tablename
-7. 
+7. Delete existing index from a table
+  ALTER TABLE tablename DROP INDEX indexname
 
 
 
