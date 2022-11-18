@@ -1,0 +1,102 @@
+XQuery:XML :: SQL:Database
+
+========= books.xml ==============
+<bookstore>
+  <book category="cooking">
+    <title lang="en">Everyday Italian</title>
+    <author>Giada de Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+</bookstore>
+=======================
+- function to extract data from XML
+  * doc(filename)
+- select all title elements
+  * doc("books.xml")/bookstore/book/title 
+- set a condition to include
+  * doc("books.xml")/bookstore/book[price<30]
+
+FLWOR
+- For
+  * selects sequence of nodes (loop)
+- Let
+  * binds a sequence to a variable
+- Where
+  * filters the nodes
+- Order by
+  * sorts the nodes
+- Return
+  * evaluates once for every node
+
+- doc("books.xml")/bookstore/book[price>30]/title
+  is equivalent to
+  '''
+  for $x in doc("books.xml")/bookstore/book
+  where $x/price > 30
+  return $x/title
+  '''
++++===============
+<ul>
+{
+  for $x in doc("books.xml")/bookstore/book/title
+  order by $x
+  return <li>{$x}</li>            // to get the element
+}
+</ul>
+///================
+OR
++++===============
+<ul>
+{
+  for $x in doc("books.xml")/bookstore/book/title
+  order by $x
+  return <li>{data($x)}</li>            // to get the data inside the element
+}
+</ul>
+///================
+
+Syntax
+- variables begin with $
+- comments are delimited by (: comment :)
+Conditionals
+- if..then..else
++++==========
+for $x in doc("books.xml")/bookstore/book
+return if ($x/@category="children")                  (: @ is for attributes :)
+then <child class="added_class1">{data($x/title)}</child>
+else <adult class="added_class2">{data($x/title)}</adult>
+///==========
+General comparisons: =  !=  <  <=  >  >=
+Value comparisons:   eq  ne  lt  le  gt  ge
+
+Adding elements and attributes to the result
++++=============
+for $x in doc("books.xml")/bookstore/book/title
+order by $x
+return $x
+///===============
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
