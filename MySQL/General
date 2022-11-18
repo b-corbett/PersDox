@@ -1,0 +1,16 @@
+1. Add a column to an existing table 
+  ALTER TABLE tablename ADD COLUMN columnname datatype
+2. Delete data from a DB
+  DELETE
+3. Create a unique index on table
+  CREATE UNIQUE INDEX indexname ON tablename (columnname)
+4. Insert data into database
+  INSERT INTO
+5. Insert new record in "Customer"
+  INSERT INTO Customers VALUES ()
+6. Create an alias for a column
+  SELECT columnname AS alias FROM tablename
+7. 
+
+
+
