@@ -1,0 +1,107 @@
+XML Schema
+- Define legal building blocks of XML document
+  * elements and attributes that can appear in a document
+  * number of (and order of) child elementst
+  * data types for elements and attributes
+  * default and fixed values for elements and attributes
+
+- Data Types Support 
+  * describe allowable document content
+  * validate correctnes of data
+  * define data facets
+  * define data patterns
+  * convert data between different data types
+  
+- Use XML syntax
+  * use XML parser to parse the schema files
+  * manipulate your Schema with XML DOM
+  * transform schema with XSLT
+- Because it's XML syntax, you can
+  * reuse schemas
+  * create data types derived from standard ones
+  * multiple schemas in the same document
+
+====== note.xml ===========
+<?xml version="1.0" ?>
+<!DOCTYPE note SYSTEM "https://www.w3schools.com/xml/note.dtd">
+
+<note xmlns="https://www.w3schools.com"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.w3schools.com/xml note.xsd">
+  <to>Chris</to>
+  <from>Jen</from>
+  <heading>Reminder</heading>
+  <body>Pick me up!</body>
+</note>
+=======================
+
+========= note.dtd ========
+<!ELEMENT note (to, from, heading, body)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+====================
+
+============ note.xsd ==========
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.w3schools.com"
+           xmlns="https://www.w3schools.com" elementFormDefault="qualified">
+  <xs:element name="note">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="to" type="xs:string"/>
+        <xs:element name="from" type="xs:string"/>
+        <xs:element name="heading" type="xs:string"/>
+        <xs:element name="body" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+==========================
+
+<schema> is the root element of every XML schema
+- [xmlns:xs=""] indicates elements and data types come from "" namespace and both coming from this namespace should be
+  prefixed with xs
+- [targetNamespace=""] indicates elements defined bu this schema (to, from, etc.) come from "" namespace
+- [xmlns=""] indicates the default namespace
+- [elementFormDefault="qualified"] indicates any elements used that were declared in the schema must be ns qualified
+
+The XML document has a reference to the schema
+- [xmlns=""] specifies default namespace
+- [xmlns:xsi=""] specifies the XML schema instance namespace
+- [xsi:schemaLocation=" "] 1st is namespace, 2nd is location of the schema for that namespace; 2 arguments separated by space
+
+Simple elements (https://www.w3schools.com/xml/schema_simple.asp)
+                (https://www.w3schools.com/xml/schema_facets.asp)
+                
+Complex elements (https://www.w3schools.com/xml/schema_complex.asp)
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
