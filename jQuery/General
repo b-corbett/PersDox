@@ -1,1 +1,134 @@
+Downloading jQuery
+================
+<head>
+      // downloaded from jQuery.com
+  <script src="jquery-3.6.1.min.js"></script>
+  OR
+      // CDN from Google
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+================
+
+Basic Syntax
+- $(selector).action()
+  * $ accesses jQuery
+  * selector to query HTML elements
+  * action() to be performed on elements
+- $(this).hide()    $("p").hide()     $(".test").hide()     $("#test").hide()
+- $(document).ready(function()) {}
+  * ensures jQuery code runs after the document is finished loading
+  * shortcut:
+    > $(function() {});
+    
+Selectors
+- select based on name, id, class, type, attributes, values of attributes, etc.
+  * very similar to CSS selectors
+- selectors start with $()
+- selecting all <p> elements
+  * $("p")
+- select element with id
+  * $("#test")
+- select element with class
+  * $(".test")
+- select all $("*")
+  select current element $(this)
+  etc.
+  
+Event Methods
+- click, dblclick, mouseenter, mouseleave
+- keypress, keydown, keyup
+- submit, change, focus, blur
+- load, resize, scroll, unload
+  * $("p").click(function() {});
+- for one or more event handlers on one elemenet
+  * $("p").on({ click: function() {}, mouseenter: function() {} });
+
+Effects 
+Hide / Show (https://www.w3schools.com/jquery/jquery_ref_effects.asp)
+- $("p").hide(speed, callback)
+- $("p").show(speed, callback)
+- $("p").toggle(speed, callback)
+
+Fading
+- fadeIn(speed, callback)    
+- fadeOut(speed, callback)     
+- fadeToggle(speed, callback)    
+- fadeTo(speed, opacity, callback)
+  * speed: "slow", "fast", milliseconds
+
+Sliding
+- slideDown(speed, callback)
+- slideUp(speed, callback)
+- slideToggle(speed, callback)
+
+Animate - $(selector).animate({params}, speed, callback);
+- $("div").animate({left: '250px', opacity: '0.5', height: '+=50px', width: 'toggle'});
+  $("div").animate({left: '100px'}, "slow")
+  $("div").animate({fontSize: '+=5px'}, "slow")
+  * a queue ^^^
+- stop an animation
+  * $("div").stop();
+
+Callback Function
+- a function that's executed once the current function is complete
+
+Chaining
+- chain together actions & methods, one after another
+- $("p").css("color", "red").slideUp(2000).slideDown(2000);
+
+HTML
+Get Content and Attributes
+- DOM manipulation
+- text()
+  * sets / returns text content of selected element
+- html()
+  * sets / returns HTML markup of selected element
+- val()
+  * sets / returns the value of form fields
+- attr("href") // example
+  * gets value of specified attribute
+  =============
+  $("button").click(function(){
+    $("#w3s").attr("href", "https://www.w3schools.com/jquery/");
+  });
+  
+  $("button").click(function(){
+    $("#w3s").attr({
+      "href" : "https://www.w3schools.com/jquery/",
+      "title" : "W3Schools jQuery Tutorial"
+    });
+  });
+  ==============
+- attr() second arg can also be a callback function / expression
+
+Add Elements
+- append()
+  * inserts content at end of selected elements
+- prepend()
+  * inserts content at beginning of selected elements
+- after()
+  * inserts content after selected elements
+- before()
+  * inserts content after selected elements
+
+Remove Elements (https://www.w3schools.com/jquery/jquery_dom_remove.asp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
