@@ -68,6 +68,7 @@ Animate - $(selector).animate({params}, speed, callback);
   * a queue ^^^
 - stop an animation
   * $("div").stop();
+- can only animate properties containing numeric values
 
 Callback Function
 - a function that's executed once the current function is complete
@@ -111,14 +112,128 @@ Add Elements
 - before()
   * inserts content after selected elements
 
-Remove Elements (https://www.w3schools.com/jquery/jquery_dom_remove.asp)
+Remove Elements
+- $(selector).remove()
+  * removes element and it's children
+- $(selector).remove(".test", ".demo")
+  * removes elements with specified class name(s) 
+- $(selector).empty()
+  * removes all children of an element
 
+Get / Set CSS Classes
+- $(selector).addClass()
+  * adds one or more classes to selected elements
+- $(selector).removeClass()
+  * removes one or more classes from selected elements
+- $(selector).toggleClass()
+  * toggles between adding and remove classes from selected elements
+- GET: $(selector).css("propertyname")
+  SET: $(selector).css("propertyname", "value")
+       $(selector).css("propertyname": "value"; "propertyname": "value")
+  * gets or sets the style attribute
+  
+Dimensions
+- $(selector).width()
+  * gets or sets content width
+- $(selector).height()
+  * gets or sets content height
+- $(selector).innerWidth()
+  * gets or sets content + padding width
+- $(selector).innerHeight()
+  * gets or sets content + padding height
+- $(selector).outerWidth()
+  * gets or sets content + padding + border width
+- $(selector).outerHeight()
+  * gets or sets content + padding + border height
+- $(selector).outerWidth(true)
+  * gets or sets content + padding + border + margin width
+- $(selector).outerHeight(true)
+  * gets or sets content + padding + border + margin height
+- $(document).height()
+- $(window).height()
+- $(selector).width().height()
 
+Traversing
+Ancestors
+- $(selector).parent()
+  * returns direct parent of each of selected element
+- $(selector).parents()
+  * returns all ancestors (up to <html>) of each of selected element
+  * specifying an element parameter filters the search for parents that are that element
+    > $(selector).parents(element)
+- $(selector).parentsUntil(element)
+  * returns all ancestors between the selector and element
 
+Descendants
+- $(selector).children()
+  * returns all direct children of selected element
+  * specify parameter to filter search for direct children of selector that are that element
+    > $(selector).children(element)
+- $(selector).find()
+  * returns descendants of selected element
+  * specify an element to get all descendants that are that element or * to get ALL descendants
+  
+Siblings
+- siblings()
+* returns all siblings
+* siblings(element)
+  > returns siblings that are that element
+- next()
+  * returns next sibling
+- nextAll()
+  * returns all next siblings
+- nextUntil(element)
+  * returns next siblings between selector and element 
+- prev()
+  * returns previous sibling
+- prevAll()
+  * returns all previous siblings
+- prevUntil(element)
+  * returns previous siblings between selector and element
 
+Filtering
+- first()
+  * returns first element of specified elements
+- last()
+  * returns last element of specified elements
+- eq()
+  * returns element at the specified index of selected elements
+- filter(".intro")
+  * specify criteria to be returned if they match
+- not(".intro")
+  * specify criteria to be returned if they do not match
 
+AJAX
+load()
+- loads data from server and puts data into selected element
+- $(selector).load(URL, data, callback)
+  * URL to load
+  * data specifies set of querystring key/value pairs to send with request [optional]
+  * callback is name of function to be executed after the method is completed [optional]
+================
+$("#div1").load("demo_test.txt"); 
+$("#div1").load("demo_test.txt #p1"); 
+$("button").click(function(){
+  $("#div1").load("demo_test.txt", function(responseTxt, statusTxt, xhr){
+    if(statusTxt == "success")
+      alert("External content loaded successfully!");
+    if(statusTxt == "error")
+      alert("Error: " + xhr.status + ": " + xhr.statusText);
+  });
+}); 
+===============
 
+get() and post()
+- GET() is used for requesting data from a specified source
+  * $.get(URL, callback)
+- POST() is used to request from server and sends data with request
+  * $.post(URL, data, callback)
 
+Miscellaneous
+noConflict() - dealing with other JS libraries that use $ as a shortcut 
+- https://www.w3schools.com/jquery/jquery_noconflict.asp
+
+Filters (https://www.w3schools.com/jquery/jquery_filters.asp)
 
 
 
