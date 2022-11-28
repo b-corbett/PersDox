@@ -1,0 +1,16 @@
+Logical Equivalence
+http://www.philosophypages.com/dy/r9.htm#repl
+https://www.csm.ornl.gov/~sheldon/ds/sec1.1.html
+https://atozmath.com/MathLogic.aspx#tblSolution
+
+Negation    - not     ( ~ )
+Conjuction  - and/but ( •, ^ )
+Disjunction - or      ( v )
+Implication - if-then ( ⊃ )
+Equivalence - iff     ( ≡ )
+
+A = your sister is awake
+B = your room is dirty
+
+A v B ≡ ~A ^ ~B
+
