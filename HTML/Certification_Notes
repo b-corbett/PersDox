@@ -1,0 +1,22 @@
+- tag specifying a caption for a table should be placed...
+  * after the <table>
+- element that specifies where image appearing w/in text appears vertically...
+  * alignment
+- in a framset, attributes define...
+  * number of columns and rows in the frameset
+- element to specify title of the document
+  * <title>
+- element for playing video files
+  * <video>
+- two methods for drawing straight line in <canvas>...
+  * using JS, moveTo(x, y) & lineTo(x, y)
+- sets or returns whether an elements content is editable 
+  * contenteditable
+- localStorage v sessionStorage
+  * localStorage saves in the browser persistively
+  * sessionStorage saves in browser until it is closed (good for user id, cookies, password, form answers, etc)
+- <content> ????????/
+- to add controls to a video player
+  * an attribute: <video controls> </video>
+- attribute specifying if element can be dragged around, specific to exlusively html elements
+  * draggable
