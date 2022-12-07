@@ -1,0 +1,59 @@
+- multiple selectors
+  * $("div, p")
+- returns all descendents of a selected element
+  * find()
+- for AJAX, specifies a function to run before request
+  * ajaxSend()
+- removes the parent of a selected element
+  * unwrap()
+- get the count of selected elements
+  * $(selector).length
+- to register a handler to be called when the first Ajax request begins
+  * ajaxStart()
+- if multiple elements are selected, to get the height of the first element
+  * $("p").height()
+- selects all heading elements (<h1>...<h6>)
+  * $(":header")
+- sets future AJAX request default values
+  * jQuery.ajaxSetup()
+- jQuery is library for client-scripting
+- selector $(":image") selects...
+  * input elements with type="image"
+- select all <li> with index > 2 (exclusive)
+  * $("li:gt(2)")
+- to append content to the innerHTML of selected element
+  * append()
+- to remove an element (delete it)
+  * remove()
+- to empty an element (delete all children from element)
+  * empty()
+- same as removing an element, but data associated with the element is stored in case for later use
+  * detach()
+- reliniquish control of '$' for variables/functions to not conflict with JavaScript base
+  * noConflict()
+- when ONE ajax request completes, regardless of outcome:
+  * ajaxComplete()
+- when ONE ajax request completes successfully:
+  * ajaxSuccess()
+- when ALL ajax requests complete:
+  * ajaxStop()
+- number of pixels current element is scrolled left or to the top
+  * scrollLeft() and scrollTop()
+- used to change the innerHTML (html()) of element
+  * after()
+- disabling default behavior for elements (i.e. clicking a link will not redirect)
+  * preventDefault()
+- [attribute$="value"] -> ends with "value"
+- to get which keyboard key was typed
+  * event.which
+- animate() can only animate properties with numeric values
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
