@@ -1,0 +1,22 @@
+- commands start with a black-slash
+  * \pi inserts pi symbol
+- general command format
+  * \command[optinal arg]{required argument}
+  * \hypersetup{colorlinks=true, linkcolor=blue}
+- commands such as \pi dont take any arguments
+- command like \begin{} require an argument
+- \documentclass[11pt, twocolumn]{article}
+- \frac{numerator}{denominator}
+- % this is a comment
+
+- To render text in math mode
+  * inline: $x+3$
+  * block:  $$x+3$$ or \[x+3\]
+    > either $$...$$ or \[...\]
+  * whole sections:
+    \begin{equation]...\end{equation}
+- \documentclass{article}
+  \usepackage{asmath}
+- \begin{document}
+  \end{document}
+
