@@ -26,3 +26,13 @@
   - which allow for write?
     r+, w, w+, x
 - PHP files can't be viewed in any browser, but the source code can 
+- mktime() - timestamp
+- delete row in table
+  * DELETE INDEX index_name ON table_name
+- add a column to a table
+  * ALTER TABLE table_name ADD COLUMN column_name datatype
+- create unique index on table
+  * CREATE UNIQUE INDEX index_name ON table_name (column_name)
+
+
+
