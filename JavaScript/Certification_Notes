@@ -1,0 +1,16 @@
+- external JS cannot contain <script>
+- change date to one week later
+  * myDate.setDate(myDate.getDate()+7)
+- JS is case sensitive
+- method used to search for substring
+  * .find(substring)
+- get first character in string
+  charAt(0)
+- navigator.appName <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,
+- HTML markup can be added in text string
+- syntax to open a new window
+  * window.open()
+- ECMAscript <<<<<<<<<<<<<<<<<<<<<<<,,
+- property to redirect visitor to another page
+  * window.location
+  
