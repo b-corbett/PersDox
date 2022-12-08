@@ -1,0 +1,28 @@
+- Function to query a database?
+  * mysqli_query()
+- Filter functions for validating user input
+- Filter to validate email addresses
+  * FILTER_VALIDATE_EMAIL
+- FileSystem, HTTP, Error functions
+- setcookie() must appear before <html> tag in document
+- All constants are automatically globally scoped
+- Function to open a new connection to MySQL server?
+  * my_sqli_connect()
+- Get query results as an array or map?
+  * mysqli_fetch_array()
+- How to get the value of a constant with a function
+  * constant()
+- Default error reporting can be changed with function:
+  * error_reporting()
+- How to get the browsers capabilities
+  * get_browser()
+- Variables do not need to be declared before use. When used, the data type will be automatically determined
+- PHP source code cannot be viewed from the browser
+- $_REQUEST holds the contents of:
+  * $_GET    $_POST    $_COOKIE
+- A MySQL connection will auto close at the end of a script
+- When using fopen() to open a file, options?
+  * r, r+, w, w+, a, a+, x, x+, c, c+, e
+  - which allow for write?
+    r+, w, w+, x
+- PHP files can't be viewed in any browser, but the source code can 
