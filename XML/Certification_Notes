@@ -1,0 +1,66 @@
+- CDATA sections cannot be nested
+  * <![CDATA[...]]>
+- which DOM object represents a node and its child nodes as a node tree?
+  * nodeList
+- DOM object that represents the entire document, the root node
+  * document
+- prolog MUST be the very first thing in the document
+- an element can be found by
+  * traversing the node tree
+  * element name
+  * index number in nodeList
+- single- or double-quotes allowed
+- 3 constituents of XSL
+  * XSLT, XSL-FO, XPath
+- <ns:el></el>
+- DOM object that represents text inside an element
+  * text
+- well-formed means syntactically correct
+  valid means obeying rules from DTD or Schema
+  * XML doc cannot be valid unless there is a DTD or Schema to follow
+- XSLT element creates copy of current node
+  * <xsl:copy-of>
+  copy with no attributes or child nodes
+  * <xsl:copy>
+- XSLT selects value of element and uses it as attribute value
+  * {/color}
+- version attribute of <xsl:stylesheet> is required
+- default namespace: <table xmlns=""> <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,
+- <xsl:apply-template> apply to all descendent nodes that have template definition w/in current node
+- <xsl:apply-template select="*"> applies to all children nodes, its up to template to go into the children
+  https://stackoverflow.com/questions/6049313/how-does-apply-templates-work
+- <xsl:text> to write literal text to output
+- x.documentElement.childNodes[0].nextSibling.nodeName .............. don't know if nextSibling is a JS thing
+- included v. imported stylesheet
+  learn.microsoft.com/en-us/dotnet/standard/data/xml/including-or-importing-xml-schemas
+  * included has same precedence as includer
+  * imported has less precedence as importer
+- <xsl:if> v. <xsl:choose> <xsl:when><xsl:otherwise> </xsl:choose>
+  * if only allows one conditional
+  * choose allows multiple conditionals
+- <xsl:text> can contain literal text, #PCDATA, entity references
+- linebreak stored as 'line feed'
+- to specify alternate code in case XSL processor doesn't support an element
+  * <xsl:fallback>
+- to MATCH the root node and it's descendents (everything)
+  * match="/"
+- variables referred to with $varname
+- no binary in CDATA section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
