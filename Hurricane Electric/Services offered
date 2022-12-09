@@ -1,0 +1,17 @@
+Shared Webhosting - HE hosts multiple clients' websites on a server
+- managed by HE
+- clients do not have root access
+
+Managed Dedicated Webhosting - HE hosts a single client's website on a server
+- client can use all of the server resource or part of it, more freedom that shared
+- managed by HE
+- clients do not have root access
+
+Root Dedicated Webhosting - HE hosts a single client's website on a server
+- client has full root access and can configure the resources however they want
+- not managed by HE
+
+Colocation - Clients rent space from HE to store their own servers, routers, etc.
+- client will normally buy IP transit service (100Mbit/s, 1Gbit/s, 10Gbit/s)
+
+IP Transit / Transport
