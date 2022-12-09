@@ -1,0 +1,53 @@
+routing.he.net
+
+Autonomous System (AS) - https://www.cloudflare.com/learning/security/glossary/what-is-bgp/
+  - a large pool of routers (network) run by single organization
+BGP (Border Gateway Protocol) - https://www.cloudflare.com/learning/security/glossary/what-is-bgp/
+  - data is moved through autonomous systems who will bring the data closer to it's destination
+  - the autonomous systems share addresses (prefixes, most likely) with each other
+  Hijacking - https://www.cloudflare.com/learning/security/glossary/bgp-hijacking/
+    - falsely announcing ownership of IP addresses to reroute traffic to malicious addresses
+  Communities - https://networklessons.com/bgp/bgp-communities-explained
+    - extra bit of information that is advertised in the prefixes
+    - used for things like traffic engineering or dynamic routing policies
+  Peering Session (Transit Session - customers) - https://www.juniper.net/documentation/us/en/software/junos/bgp/topics/topic-map/bgp-peering-sessions.html
+    - connection between autonomous systems over BGP to advertise addresses
+Cross-connect - https://www.datacenters.com/news/data-center-connectivity-everything-you-need-to-know-about-cross-connects
+  - physical direct connection between two different termination locations
+  - connect COLOCATION RACK to ISP, telecom carrier, network provider, cloud provider
+  - the lines typically run above the colocation racks
+Circuit-switched - https://www.techtarget.com/searchnetworking/definition/circuit-switched
+  - a connection between end nodes that is dedicated to those nodes for the duration of the connection
+  Circuit ID - https://en.wikipedia.org/wiki/Circuit_ID
+    - company specific identifier for the circuit-switched connection between two nodes
+Default route - https://www.juniper.net/documentation/us/en/software/junos/is-is/topics/concept/default-route-understanding.html
+  - when a computer sends data across the internet, the computer will check if it has the IP address in it's cache
+  - if it cannot find it, it will send to the default address which will typically be the ISP's address
+  local loop
+  loopback
+Internet Exchange Point (IXP) - https://www.cloudflare.com/learning/cdn/glossary/internet-exchange-point-ixp/
+  - physical location through which internet infrastructure companies such as ISPs and CDNs connect with each other
+  - share transit outside of their own network
+Prefixes (max prefixes) - https://medium.com/netdevops/what-are-network-prefixes-e1923a1d6a3e
+                        - https://www.techwalla.com/articles/how-to-determine-network-prefixes
+  - aggregations of IP addresses to create groups 
+  CIDR (Classless Inter-Domain Routing) - https://www.techtarget.com/searchnetworking/definition/CIDR
+    - 
+link-local - https://serverfault.com/questions/118324/what-is-a-link-local-address
+  - 
+DDoS (Distributed Denial-of-Service) attack - https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/
+  - attempt to disrupt normal traffic of a server/network by overwhelming it with flood of manufactured traffic
+DHCP (Dynamic Host Conifguration Protocol) - https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-top
+  - client/server protocol that automatically provides an IP host with it's address
+RIR validation
+  -
+LOA - https://www.streamdatacenters.com/glossary/letter-of-authorization-loa/
+  - 
+
+
+
+
+
+
+
+
