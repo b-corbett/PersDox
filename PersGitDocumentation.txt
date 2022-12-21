@@ -2,3 +2,7 @@ To get PAT (Personal Access Token)
 - log into github.com
 - settings -> developer settings -> personal access tokens (PATs)
 
+
+
+To clone HE git repo, setup environment, etc.
+1. ``` hello ```
