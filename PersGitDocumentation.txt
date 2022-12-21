@@ -42,6 +42,82 @@ theres about a 100 unique types or so listed on the github page, generate atleas
 
 
 
+Python code for getting all the examples of the problems:
+-------------------
+import mathgenerator as mg
+
+genList = mg.getGenList()
+
+for i in range(len(genList)):
+    problem, solution = mg.genById(i)
+    print(str(i) , "-", genList[i][1], "("+genList[i][4]+")")
+    print("Problem:", problem)
+    print("Solution:", solution)
+----------------
+
+Document for tracking solvability
+-----------------
+0 Addition 
+basic_math
+solved
+
+1 Subtraction
+basic_math
+solved
+
+2 Multiplication
+basic_math
+solved
+
+3 Division
+basic_math
+solved
+
+4 Binary complement 1s
+computer_science
+not solved
+no option to calculate binary complements
+
+5 Modulo Division
+computer_science
+not solved
+unable to parse
+
+6 Square root
+basic_math
+solved
+
+7 Power rule differentiation
+calculus
+not solved
+no option for it
+
+8 Square
+basic_math
+solved		
+
+9 LCM (least common multiple)
+misc
+-----------------
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
 
 
 
