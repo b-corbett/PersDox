@@ -56,13 +56,17 @@ for i in range(len(genList)):
     print('')
 ----------------
 
-Document for tracking solvability
+
+
 Matrix symbol doesn't seem to work. ask about that and if something changes,
 	reanalyze 46, 17, maybe 43
 Not sure what this is: 23
 How to do word problems: 52
 mathgenerator has stddev and variance swapped: 59
-
+try to understand: 91
+solver has wrong answer?: 91
+for the area, volume, etc. problems, go back and enter them in with words
+	i.e. 'area of circle with radius...'
 
 12/21 14:00 - 14:30
 -------------------
@@ -756,55 +760,301 @@ no solution generated
 correct answer 57.3
 unsolved
 
-88 Differentiation
-calculus
 
+12/23
+----------
+88 Trigonometric differentiation
+calculus
+no parse d/dx(sin)
+no parse 'differentiation d/dx(sin)'
+no solution generated
+correct answer cos
+unsolved
 
 89 Definite integral of quadratic equation
 calculus
+parse $$\int_{0}^{1}(68x^2+5x+15) dx$$
+no parse 'integral limit 0 to 1 68x^2+5x+15, solve for x'
+solution generated 40.167
+correct answer 40.167
+solved
 
 90 isprime
 basic_math
+parse 'is 5 prime'
+solution generated yes
+correct answer yes
+solved
 
+91 Binary coded decimal to integer
+computer_science
+no parse 'binary coded 6'
+no parse 'bcd 6'
+no solution generated
+correct answer 
+unsolved
 
+92 Complex to polar form
+misc
+no parse 'complex to polar form $21.02(-19.0\theta + i-9.0\theta)$'
+no solution generated
+correct answer -2.7
+unsolved
 
+93 Union, intersection, difference of two sets
+misc
+no parse 'union \{10,2,5\}, \{9,3,5,1\}'
+no parse '$\{10,2,5\} \cup \{9,3,5,1\}$'
+no solution generated
+correct answer {1, 2, 3, 5, 9, 10}
+unsolved
+no parse 'intersection $\{10,2,5\}, \{9,3,5,1\}$'
+no parse '$\{10,2,5\} \cap \{9,3,5,1\}$'
+no solution generated
+correct answer {5}
+unsolved
+no parse $\{10,2,5\} - \{9,3,5,1\}$
+no solution generated
+correct answer {10,2}
+unsolved
+no parse 'symmetric difference $\{10,2,5\}, \{9,3,5,1\}$'
+no solution generated
+correct answer {1, 2, 3, 9, 10}
+unsolved
 
+94 Base conversion
+misc
+no parse '$6561_{11}$ to base 10'
+no parse 'convert base 11 6561 to base 10'
+no solution generated
+correct answer 8658
+unsolved
 
+95 Curved surface area of a cylinder
+geometry
+no parse 'curved surface area of cylinder radius=13 height=42'
+no solution generated
+correct answer 3430.62
+unsolved
 
+96 Perimeter of polygons
+geometry
+no parse 'perimeter of 11-side polygon 79,40,20,19,82,7,49,51,39,102,118'
+no solution generated
+correct answer 606
+unsolved
 
+97 Power of powers - does not simplify how generator specifies
+basic_math
+parse 'simplify 36^(7^4)'
+solution generated 36^2401
+correct answer 36^28
+unsolved
 
+98 Quotient of powers with same base > steps are not what is specified by generator
+misc
+parse (49^8)/(49^3)
+solution generated 282475249
+correct answer 282475249
+solved
 
+99 Quotient of powers with same power > steps are not what is specified by generator
+misc
+parse (13^6)/(22^6)
+solution generated 0.0426
+correct answer 0.0426
+solved
 
+100 Complex quadratic equation
+algebra
+no parse 'find roots of x^2+7x+4=0'
+no parse 'roots x^2+7x+4=0'	
+no solution generated 
+correct answer (-0.628, -6.372) = ((-7+√33)/(2*1), (-7-√33)/(2*1))
+unsolved
 
+101 Leap year or not
+misc
+no parse 'is 2028 a leap year'
+no solution generated
+correct answer NO
+unsolved
 
+102 Minute to hour conversion
+misc
+parse '513 minutes to hours'
+no parse '513 minutes to hours and minutes'
+solution generated 8.55 hours
+correct answer 8hr 33min = 8.55 hours
+solved
 
+103 Decimal to binary coded decimal
+computer_science
+no parse 'decimal 1548 to binary coded decimal'
+no solution generated
+correct answer 6012
+unsolved
 
+104 Circumference
+geometry
+no parse 'circumference radius=86'
+no parse 'circumference of circle, radius=86'
+no solution generated
+correct answer 540.35
+unsolved
 
+105 Combine like terms
+algebra
+parse 'combine like terms $7x^{5} + 6x^{14} + 10x^{2} + 6x^{5} + 8x^{15} + 6x^{6} + 6x^{1} + 7x^{5}$'
+solution generated $2 x \left(4 x^{14} + 3 x^{13} + 3 x^{5} + 10 x^{4} + 5 x + 3\right)$ > just gets factored, not combining like terms
+correct answer $6x^{1} + 10x^{2} + 20x^{5} + 6x^{6} + 6x^{14} + 8x^{15}$
+unsolved
 
+106 Signum function
+misc
+no parse 'signum of 929'
+no parse 'sign of 929'
+no solution generated
+correct answer 1
+unsolved
 
+107 Conditional probability
+statistics
+no parse the math problem
+no solution generated
+correct 52.18
+unsolved
 
+108 Arc length of angle
+geometry
+no parse 'find arc length of angle radius=48, angle=252'
+no solution generated
+correct answer 211.115
+unsolved
 
+109 Binomial distrbiution
+misc
+no parse the math problem
+no solution generated
+correct answer 99.94
+unsolved
 
+110 Stationary points
+calculus
+no parse 'stationary points f(x)=x^3 + 2*x^2 + x + 6'
+no solution generated
+correct answer (1, -1/3)
+unsolved
 
+111 Expanding factored binomial
+algebra
+parse 'expand (-6x-4)(-1x+6)'
+no parse 'expand binomial $(-6x-4)(-1x+6)$'
+solution generated 6x^2-32x-24
+correct answer 6x^2-32x-24
+solved
 
+112 Area of circle
+geometry
+parse 'area of circle with radius 24'
+solution generated 1809.56
+correct answer 1809.56
+solved
 
+113 Volume of frustrum
+geometry
+no parse 'volume of frustrum with height 28 r1 17 r2 17'
+no parse 'volume of frustrum with height 28,r1=17,r2=17'
+no solution generated
+correct answer 21199.0
+solved
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+114 Equation of line from two points
+geometry
+no parse 'What is the equation of the line between points $(-1,14)$ and $(7,13)$ in slope-intercept form?'
+no parse 'equation of line between (-1,14) and (7,13) slope-intercept form'
+no solution generated
+correct answer 8y=-x+111
+unsolved
 
+115 Area of circle given center and point on circle
+geometry
+no parse 'area of circle with center (-8,-3) point (-8,-3)'
+no solution generated
+correct answer 0
+unsolved
 
+116 Factors of a number
+misc
+parse 'factors of 432'
+solution generated 2*2*2*2*3*3*3 > prime factorization
+correct answer 1, 2, 3, 4, 6, 8, 9, 12, 16, 18, 24, 27, 36, 48, 54, 72, 108, 144, 216, 432
+unsolved
 
+117 Volume of hemisphere
+geometry
+parse 'volume of hemisphere with radius 1'
+solution generated 2.09
+correct answer 2.04
+solved
 
+118 Percentage difference
+basic_math
+no parse 'What is the percentage difference between $15$ and $56$'
+no parse 'percentage difference between 15 and 56'
+no solution generated
+correct answer 115.49%
+unsolved
 
+119 Percentage error
+basic_math
+no parse 'Find the percentage error when observed value equals $-14$ and exact value equals $-38$'
+no parse 'percentage error -14 and -38'
+no solution generated
+corrrect answer 63.16
+unsolved
+
+120 Greatest common divisor of N numbers
+basic_math
+parse 'gcd 998935770 485445874'
+solution generated 2
+correct answer 2
+solved
+
+121 Product of scienific notations
+misc
+parse '$4.64 \times 10^{29}$ * $9.3 \times 10^{29}'
+solution generated 4.32*10^59 > not in scientific notation
+correct answer 4.32*10^59
+solved
+
+122 Volume of pyramid
+geometry
+parse 'volume of pyramid with length 8 width 17 height 32' > says one invalid property
+no solution generated
+correct answer 1450.667
+unsolved
+
+123 Surface area of pyramid
+geometry
+parse 'Surface area of pyramid with length 40, width 24, height 16' > says one invalid property
+no parse 'Surface area of pyramid with base length 40 base width 24 height 16'
+no solution generated 
+correct 1920
+unsolved
+
+124 Is composite
+basic_math
+parse 'is 39 composite'
+solution generated YES
+correct answer YES
+solved
+
+125 Complementary and supplementary angle
+geometry
+no parse 'supplementary angle of 93'
+no parse 'complimentary angle of 93'
+no solution generated
+correct answer 87
+unsolved
 
