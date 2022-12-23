@@ -57,7 +57,6 @@ for i in range(len(genList)):
 ----------------
 
 Document for tracking solvability
------------------
 Matrix symbol doesn't seem to work. ask about that and if something changes,
 	reanalyze 46, 17, maybe 43
 Not sure what this is: 23
@@ -629,7 +628,143 @@ no parse 'angle between vectors [75.77, 726.09, 692.61, 514.4, 639.36, 715.47, 7
 no solution generated
 correct answer 0.47
 unsolved
------------------------------------------------------------------------------------------------
+
+12/22 13:15 - 13:45
+-------------------
+71 Absolute difference between 2 numbers
+basic_math
+parse |5-10|
+solution generated 5
+correct answer 5
+solved
+
+72 Dot product of 2 vectors
+algebra
+no parse [3,-4,-5].[-20,-13,20]
+no parse 'dot product [3,-4,-5],[-20,-13,20]'
+no solution generated 
+correct answer -108
+unsolved
+
+73 Binary 2's complement
+computer_science
+no parse "2's complement 11001"
+no solution generated
+correct answer 111
+unsolved
+
+74 Inverse of a matrix
+algebra
+no parse 'inverse matrix [[19, 89, 37],[84, 97, 82],[46, 2, 72]]'
+no solution generated
+correct answer [[-3410/115931, 3167/115931, -3709/231862], [1138/115931, 167/115931, -775/115931], [2147/115931, -2028/115931, 5633/231862]]
+unsolved
+
+75 Area of a sector [r^2*angle/2]
+geometry
+no parse 'area of sector, radius=42, angle=208'
+no parse 'radius=42, angle=208, find area of sector'
+no solution generated
+correct answer 3201.91
+unsolved
+
+76 Mean and median
+statistics
+parse arithmetic mean 13, 14, 29, 33, 46, 65, 73, 74, 82, 94
+parse arithmetic mean and median 13, 14, 29, 33, 46, 65, 73, 74, 82, 94
+no parse arithmetic mean of [13, 14, 29, 33, 46, 65, 73, 74, 82, 94]
+solution generated mean: 52.3   median: 55.5
+correct answer mean: 52.3   median: 55.5
+unsolved
+
+77 Determinant to 2x2 matrix
+algebra 
+no parse 'determinant [[82,56],[61,69]]'
+no parse det([[82,56],[61,69]])
+no solution generated
+correct answer 2242
+unsolved
+
+78 Compound interest
+algebra
+no parse 'compound interest principal=4094 interest=.04 period=9'
+no solution generated
+correct answer 5827.04
+unsolved
+
+79 Decimal to hexadecimal
+computer_science
+no parse hex(901) > parses, but incorrectly
+no solution generated
+correct answer 0x385
+
+80 Percentage of a number
+basic_math
+parse '36% of 82'
+solution generated 29.52
+correct answer 29.52
+solved
+
+81 Celsius to fahrenheit
+misc
+no parse 'convert -1 celsius to farenheit'
+no parse '-1 celsius in fahrenheit'
+no solution generated
+correct answer 30.2
+unsolved
+
+82 AP term calculation
+misc
+no parse 'find term number 47 of AP series 14, -33, -80'
+no parse 'find term 47 of series 14, -33, -80'
+no solution generated
+correct answer -2148
+unsolved
+
+83 AP sum calculation
+misc
+no parse 'sum of first 33 terms of AP series -69, -43, -17'
+no solution generated
+correct answer 11451
+unsolved
+
+84 Converts decimal to octal
+computer_science
+no parse 'decimal 927 to octal'
+no solution generated
+correct answer 0o1637
+unsolved
+
+85 Converts decimal to roman numerals 
+misc
+no parse 'decimal 10 in roman numerals'
+no solution generated
+correct answer X
+unsolved
+
+86 Degrees to radians
+geometry
+no parse '90 degrees to radians'
+no solution generated
+correct answer 0.03
+unsolved
+
+87 Radians to degrees
+geometry
+no parse '1 radians to degrees'
+no solution generated
+correct answer 57.3
+unsolved
+
+88 Differentiation
+calculus
+
+
+89 Definite integral of quadratic equation
+calculus
+
+90 isprime
+basic_math
 
 
 
@@ -640,12 +775,6 @@ unsolved
 
 
 
-	
-	
-
-
-
-	
 
 
 
@@ -660,14 +789,6 @@ unsolved
 
 
 
-
-
-
-
------------------
-	
-	
-	
 	
 	
 	
