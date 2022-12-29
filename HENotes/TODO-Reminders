@@ -1,0 +1,43 @@
+For current math solving testing & report
+
+CHATS
+- From William
+https://github.com/lukew3/mathgenerator this is the python library which has a function to generate example problems of a certain type based on a number which indicates the type of problem
+https://staging.mathanswered.com/ enter them here not sure if you have an account for the math site yet but you should make one
+theres about a 100 unique types or so listed on the github page, generate atleast one problem of each type and make a report of whether our mathbot can solve it or not
+- Links 
+https://github.com/lukew3/mathgenerator
+https://staging.mathanswered.com/
+
+Setup
+- robert.loth
+the "Make Setup" script at https://vcs.he.net/robert.loth/make-setup should be much easier to use now, if anyone is still using 
+  it. The old version is at tag v0.1 "git checkout v0.1" and the new version is at tag v0.2 "git checkout v0.2". Usage has changed, 
+  the first and only argument is the <username> from <username>@he.net 
+
+https://math.he.net/interact
+https://math.he.net/mathbot
+
+Math API
+12/22, 11:41 (and after 12/22 is when talk of the API begins)
+curl -v -F 'q=1+2+3+4'  https://math.he.net/mathbot
+
+12/28, 
+https://vcs.he.net/robert.loth/mathbot_api_test
+robert.loth: ok, the api test script has a new url to reflect what it actually does. https://vcs.he.net/robert.loth/mathbot_api_test 
+It should be feature-complete at this point. Only installation step past what is already on the noc computers is "sudo apt install php php-dom php-mbstring"
+  to deal with the php subprocess dependencies.
+
+12/28, 12:31
+William: cool the report looks good so far
+William: next thing would be to have another script to run each of the test problems with jasons api and put the results in another file
+	and then i know bob mightve wrote a tool to make comparing the answers possible
+William: but for now you might want to reformat how you store the questions in solver_capability_tracker.txt so that you can read them again in 
+  python and query the api for each question
+Me: gotcha, that's related to a question I had. the solver should be able to parse and solve the problems as they're asked in the python 
+  mathgenerator library right? like in word problem form?
+William: yeah mostly
+	for the questions where you had to rewrite the problem a bit to get it to work, you can still list those in the file, and test each of 
+  them against the api
+William: but mostly you should just take the output of the mathgenerator and test that
+William: directly passing to the api
