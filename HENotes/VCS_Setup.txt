@@ -1,0 +1,35 @@
+To get PAT (Personal Access Token)
+- log into github.com
+- settings -> developer settings -> personal access tokens (PATs)
+
+
+
+To clone HE git repo, setup environment, etc.
+1. Generate SSH key
+  - [ssh-keygen -t ed25519 -C "keygen on <date> @ <time>"]
+  - no passphrase
+2. Copy key and add it to gitlab account
+  - copy key from Home/.ssh/id_ed25519.pub
+    paste into...
+  - Preferences > SSH Keys
+3. Test the SSH key
+  - [ssh -T gitlab.com]
+4. Clone the repository
+  - [git clone https://vcs.he.net/math-solver/math-site-solvers-brian.corbett.git --recursive]
+  - type in the fingerprint that is displayed
+  - [cd math-site-solvers-brian.corbett]
+5. Set-up python environment
+		- if you need to get into a branch that is not showing up when you type 'git branch':
+			- git switch <branch-name>
+  - copy 'make-venv.bash' and paste into the repo root directory
+  - can be found at https://vcs.he.net/math-solver/math-solver-issues/-/wikis/Solver-Author-Orientation 
+  - [bash make-venv.bash venv]
+  - [source venv/bin/activate]
+  - [export PYTHONPATH=${PYTHONPATH}:$(pwd)]
+6. Test environment
+  - [cd test]
+  - [python -m unittest line_slope_2points_test/line_slope_2points_test.py]
+  
+
+
+
