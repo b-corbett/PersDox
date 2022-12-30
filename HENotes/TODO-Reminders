@@ -24,8 +24,9 @@ curl -v -F 'q=1+2+3+4'  https://math.he.net/mathbot
 
 12/28, 
 https://vcs.he.net/robert.loth/mathbot_api_test
+https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser
 robert.loth: ok, the api test script has a new url to reflect what it actually does. https://vcs.he.net/robert.loth/mathbot_api_test 
-It should be feature-complete at this point. Only installation step past what is already on the noc computers is "sudo apt install php php-dom php-mbstring"
+	It should be feature-complete at this point. Only installation step past what is already on the noc computers is "sudo apt install php php-dom php-mbstring"
   to deal with the php subprocess dependencies.
 
 12/28, 12:31
