@@ -13,7 +13,7 @@ To clone HE git repo, setup environment, etc.
     paste into...
   - Preferences > SSH Keys
 3. Test the SSH key
-  - [ssh -T gitlab.com]
+  - [ssh -T git@vcs.he.net]
 4. Clone the repository
   - [git clone https://vcs.he.net/math-solver/math-site-solvers-brian.corbett.git --recursive]
   - type in the fingerprint that is displayed
