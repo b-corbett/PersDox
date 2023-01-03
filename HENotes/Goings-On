@@ -25,6 +25,7 @@ ASKED TO BOB ON 1/2
 well looks like I can run it now, i'm getting this error:
 		Command '['info-tag/extract-tag.php', '-c', 'he-info']' returned non-zero exit status 127.
 Any idea what this means? I've been trying to find out but haven't found anything useful i think
+	ANSWER: run this command 'sudo apt install php php-dom php-mbstring' 
 
 -------------------------------------------------
 CHATS - From William
