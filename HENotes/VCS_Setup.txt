@@ -31,10 +31,11 @@ To clone HE git repo, setup environment, etc.
   - [python -m unittest line_slope_2points_test/line_slope_2points_test.py]
   - [cd ..]
 7. Clone mathbot API
-	- [git clone https://vcs.he.net/robert.loth/mathbot_api_test.git --reecursive]
+	- [git clone https://vcs.he.net/robert.loth/mathbot_api_test.git --recursive]
 	- keep entering the fingerprint
 	- [cd math_bot_api]
 	- [git switch hard-copy]
+	- move 'info-tag' directory to main repo
 	- [cd ..]
 8. Dependencies 
 	- [pip install mathgenerator]
