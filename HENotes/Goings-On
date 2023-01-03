@@ -21,10 +21,12 @@ URL to send data for the API
 To fix error getting from API call
 	https://linuxconfig.org/how-to-fix-bash-127-error-return-code
 
+ASKED TO BOB ON 1/2
+well looks like I can run it now, i'm getting this error:
+		Command '['info-tag/extract-tag.php', '-c', 'he-info']' returned non-zero exit status 127.
+Any idea what this means? I've been trying to find out but haven't found anything useful i think
 
-
-
-
+-------------------------------------------------
 CHATS - From William
 Will: https://github.com/lukew3/mathgenerator this is the python library which has a function to generate example problems of a certain type based on a number which indicates the type of problem
 Will: https://staging.mathanswered.com/ enter them here not sure if you have an account for the math site yet but you should make one
