@@ -29,7 +29,45 @@ To clone HE git repo, setup environment, etc.
 6. Test environment
   - [cd test]
   - [python -m unittest line_slope_2points_test/line_slope_2points_test.py]
+  - [cd ..]
+7. Clone mathbot API
+	- [git clone https://vcs.he.net/robert.loth/mathbot_api_test.git --reecursive]
+	- keep entering the fingerprint
+	- [cd math_bot_api]
+	- [git switch hard-copy]
+	- [cd ..]
+8. Dependencies 
+	- [pip install mathgenerator]
+	- [pip install requests]
+	- [sudo apt install php php-dom php-mbstring]
   
 
+https://vcs.he.net/math-solver/math-solver-issues/-/wikis/home
+https://vcs.he.net/robert.loth/mathbot_api_test/-/tree/master/
+  (git clone master -> then switch to 'hard-copy' branch)
+
+
+for API error: https://linuxconfig.org/how-to-fix-bash-127-error-return-code
+
+LINKS:
+repo for the math problem generator
+	https://github.com/lukew3/mathgenerator
+vcs setup utility - by Bob
+	https://vcs.he.net/robert.loth/make-setup
+API for the math solver (hard-copy branch to avoid access issues)
+	https://vcs.he.net/robert.loth/mathbot_api_test
+site for the math solver
+	https://math.he.net/interact
+URL to send data for the API
+	https://math.he.net/mathbot
+
+To fix error getting from API call
+	https://linuxconfig.org/how-to-fix-bash-127-error-return-code
+
+ASKED TO BOB ON 1/2
+well looks like I can run it now, i'm getting this error:
+		Command '['info-tag/extract-tag.php', '-c', 'he-info']' returned non-zero exit status 127.
+Any idea what this means? I've been trying to find out but haven't found anything useful i think
+	ANSWER: run this command 'sudo apt install php php-dom php-mbstring' 
 
 
