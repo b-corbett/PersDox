@@ -1,13 +1,20 @@
 For current math solving testing & report
 
+1/3
+William: great so just to confirm you should have the tests in such a way that they can be batch tested so we can check the changes per problem on whether 
+				 our solvers can solve/parse them in the future
+Brian:   Right so essentially, someone should be able to create multiple json files relating to different problems and run them through the script all at 
+				 once correct?
+William: yup
+				 for the python math problem generator specifically you might want to have a way to generate problems with it, turn those into the proper json 
+				 format, and then be able to send those to the api
+Brian:   alright sounds good. i'll start with the generator for now
+
 Current workflow URLs to open
 https://vcs.he.net/math-solver/math-site-solvers-brian.corbett
 https://vcs.he.net/math-solver/math-solver-issues/-/wikis/home
-https://vcs.he.net/robert.loth/mathbot_api_test/-/tree/master/
+https://vcs.he.net/robert.loth/mathbot_api_test
   (git clone master -> then switch to 'hard-copy' branch)
-
-
-for API error: https://linuxconfig.org/how-to-fix-bash-127-error-return-code
 
 LINKS:
 repo for the math problem generator
@@ -20,9 +27,6 @@ site for the math solver
 	https://math.he.net/interact
 URL to send data for the API
 	https://math.he.net/mathbot
-
-To fix error getting from API call
-	https://linuxconfig.org/how-to-fix-bash-127-error-return-code
 
 ASKED TO BOB ON 1/2
 well looks like I can run it now, i'm getting this error:
