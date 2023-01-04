@@ -23,24 +23,24 @@ To clone HE git repo, setup environment, etc.
 			- git switch <branch-name>
   - copy 'make-venv.bash' and paste into the repo root directory
   - can be found at https://vcs.he.net/math-solver/math-solver-issues/-/wikis/Solver-Author-Orientation 
-  - [bash make-venv.bash venv]
-  - [source venv/bin/activate]
-  - [export PYTHONPATH=${PYTHONPATH}:$(pwd)]
+  - [bash make-venv.bash venv; source venv/bin/activate; export PYTHONPATH=${PYTHONPATH}:$(pwd)]
+  -*** [source venv/bin/activate]
+  -*** [export PYTHONPATH=${PYTHONPATH}:$(pwd)]
 6. Test environment
-  - [cd test]
-  - [python -m unittest line_slope_2points_test/line_slope_2points_test.py]
-  - [cd ..]
+  - [cd test; python -m unittest line_slope_2points_test/line_slope_2points_test.py; cd ..]
+  -*** [python -m unittest line_slope_2points_test/line_slope_2points_test.py]
+  -*** [cd ..]
 7. Clone mathbot API
 	- [git clone https://vcs.he.net/robert.loth/mathbot_api_test.git --recursive]
 	- keep entering the fingerprint
-	- [cd math_bot_api]
-	- [git switch hard-copy]
-	- move 'info-tag' directory to main repo
-	- [cd ..]
+	- [cd mathbot_api_test; git switch hard-copy; cd ..]
+	-*** [git switch hard-copy]
+	-*** [cd ..]
+	- move 'mathbot_api_test/info-tag/' to main repo
 8. Dependencies 
-	- [pip install mathgenerator]
-	- [pip install requests]
-	- [sudo apt install php php-dom php-mbstring]
+	- [pip install mathgenerator; pip install requests; sudo apt install php php-dom php-mbstring]
+	-*** [pip install requests]
+	-*** [sudo apt install php php-dom php-mbstring]
   
 
 https://vcs.he.net/math-solver/math-solver-issues/-/wikis/home
