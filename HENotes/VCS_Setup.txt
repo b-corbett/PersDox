@@ -23,7 +23,8 @@ To clone HE git repo, setup environment, etc.
 			- git switch <branch-name>
   - copy 'make-venv.bash' and paste into the repo root directory
   - can be found at https://vcs.he.net/math-solver/math-solver-issues/-/wikis/Solver-Author-Orientation 
-  - [bash make-venv.bash venv; source venv/bin/activate; export PYTHONPATH=${PYTHONPATH}:$(pwd)]
+  - [bash make-venv.bash venv]
+	- [source venv/bin/activate; export PYTHONPATH=${PYTHONPATH}:$(pwd)]
   -*** [source venv/bin/activate]
   -*** [export PYTHONPATH=${PYTHONPATH}:$(pwd)]
 6. Test environment
