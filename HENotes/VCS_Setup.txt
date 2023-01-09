@@ -37,6 +37,7 @@ To clone HE git repo, setup environment, etc.
 	- [cd mathbot_api_test; git switch hard-copy; cd ..]
 	-*** [git switch hard-copy]
 	-*** [cd ..]
+	- https://stackoverflow.com/questions/4924002/git-pulling-from-specific-branch
 	- move 'mathbot_api_test/info-tag/' to main repo
 8. Dependencies 
 	- [pip install mathgenerator; pip install requests; sudo apt install php php-dom php-mbstring]
