@@ -3,6 +3,7 @@ To get PAT (Personal Access Token)
 - settings -> developer settings -> personal access tokens (PATs)
 
 MeisterTask
+Make main .txt file that has metrics of all the tests done (meant mostly for mathgenerator testing)
 
 To clone HE git repo, setup environment, etc.
 1. Generate SSH key
