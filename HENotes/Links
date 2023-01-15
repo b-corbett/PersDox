@@ -1,0 +1,35 @@
+
+
+customer saying they are experiencing packet loss
+  we need the source and destination IPs from them
+  ask them to email it to support@he.net and we will look at it
+  need to see if the traffic is going through HE to see if it's our problem
+
+admin.he.net > manage system services, process status, iptable output, tail logs
+
+traffic.he.net - shows the status of routers, switches, etc...
+  top right cornet icon gives chart view of each link
+
+sentinel.he.net > cabinets
+  overview of status of all cabinets
+
+http://faq.he.net/index.php/Email > Email settings
+  process to troubleshoot connection to mail server
+  
+https://supporttools-ops.he.net/ > type in server name
+  shows status for processes, importantly check_http (apache), check_imap (dovecot), check_smtp (email)
+
+https://monitor.he.net/peering > sessions by router
+
+https://tickets.he.net/wiki/index.php/Video_Monitoring
+  fmt2 property cameras
+  
+tickets > home > workorders on right side of screen
+  every day - cabinet check
+  every sunday - monitors check in 1300 and 1200
+  every 1st sunday - clean the monitors
+  
+tickets > home > top section is alerts 
+  get familiar with this stuff (the circuit id's mentioned can take you to circuits.he.net for more info)
+  
+getrelish.com
