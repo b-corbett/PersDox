@@ -18,10 +18,12 @@ To clone HE git repo, setup environment, etc.
 4. Clone the repository
   - [git clone https://vcs.he.net/math-solver/math-site-solvers-brian.corbett.git --recursive]
   - type in the fingerprint that is displayed
-  - [cd math-site-solvers-brian.corbett]
+  - [cd math-site-solvers-brian.corbett]		
+  - if you need to get into a branch that is not showing up when you type 'git branch':
+	- git switch <branch-name>
+	- [git switch math_solver_report]
 5. Set-up python environment
-		- if you need to get into a branch that is not showing up when you type 'git branch':
-			- git switch <branch-name>
+
   - copy 'make-venv.bash' and paste into the repo root directory
   - can be found at https://vcs.he.net/math-solver/math-solver-issues/-/wikis/Solver-Author-Orientation 
   - [bash make-venv.bash venv]
