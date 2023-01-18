@@ -1,4 +1,17 @@
 For current math solving testing & report
+1/18
+Robert: The return code being 0 when 0 tests were found is the correct behavior as originally intended, but I agree it is a little confusing. I will move it to 2. I'm thinking of reserving 1 for "tests were found correctly, but failed" and 2 as a generic "something happened, and tests were not found/loaded correctly."
+        ok, the latest commit to master should reflect those changes. Addition.json's question is just "2+2", which isn't tagged yet.
+
+	service@service:~/mathbot_api_test$ python3 test.py addition.json -v
+	WARNING:root:the string 'he-info' was not found in the html_solution returned by the mathbot API.
+	ERROR:root:No tests were run. Either there were 0 tests found in test.json, or there was no HTML element tagged with an id starting with "he-info" in the API response's "html_solution" field.
+	service@service:~/mathbot_api_test$ echo $?
+	2
+	we do have a full 255 error codes available to use, with around ~130 Linux-standard ones: https://chromium.googlesource.com/chromiumos/docs/+/HEAD/constants/errnos.md
+	If it would be helpful to have your program do something based on the specific return code you get back, I can implement more than just 0,1 and 2.
+
+
 
 1/3
 William: great so just to confirm you should have the tests in such a way that they can be batch tested so we can check the changes per problem on whether 
