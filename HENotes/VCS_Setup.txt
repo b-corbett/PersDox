@@ -41,6 +41,7 @@ To clone HE git repo, setup environment, etc.
 	-*** [git switch hard-copy]
 	-*** [cd ..]
 	- https://stackoverflow.com/questions/4924002/git-pulling-from-specific-branch
+	- to pull master into the hard-copy branch > [git pull origin master]
 	- move 'mathbot_api_test/info-tag/' to main repo
 8. Dependencies 
 	- [pip install mathgenerator; pip install requests; sudo apt install php php-dom php-mbstring]
