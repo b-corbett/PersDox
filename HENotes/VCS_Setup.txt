@@ -16,7 +16,8 @@ To clone HE git repo, setup environment, etc.
 3. Test the SSH key
   - [ssh -T git@vcs.he.net]
 4. Clone the repository
-  - [git clone https://vcs.he.net/math-solver/math-site-solvers-brian.corbett.git --recursive]
+  - -------- [git clone https://vcs.he.net/math-solver/math-site-solvers-brian.corbett.git --recursive]
+  - [git clone https://vcs.he.net/brian.corbett/mathbot_testing.git --recursive]
   - type in the fingerprint that is displayed
   - [cd math-site-solvers-brian.corbett]		
   - if you need to get into a branch that is not showing up when you type 'git branch':
