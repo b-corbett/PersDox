@@ -4,6 +4,17 @@ William: Did you fix that bug you were showing me last time?
 	 Also im going to need access to your repository https://vcs.he.net/math-solver/math-site-solvers-brian.corbett/-/tree/math_solver_report and not
 	    just for a temporary amount of time, please either move it to a repository under your own name so you can give me access yourself or tell tom
 	    to not put a time restriction on it, if you have trouble let me know and ill talk to him about it
+Me: Hey will, I made my own repository https://vcs.he.net/brian.corbett/mathbot_testing and i invited you to have maintainer permissions indefinitely. i've
+    fixed all bugs associated with creating json tests and running the tests. I'm still working on the overall test results. I've had to refactor a couple of 
+    times because the way I was trying to parse all the results was turning out to be spaghetti code. I've now got a plan to continue with the overall test 
+    results. 
+    a couple questions:
+    so far im thinking pass/fail results for each category (basic_math, algebra, etc.) of problems (which i'm about halfway done with already), 
+                   and pass/fail results for each problem specifically which are actually calculated in each problems' folder already, should I also show
+		   those results in the overall test result file?
+    are  you planning on using the math generator tester as soon as possible? 
+    The tester itself and adding a test result file for each individual problem is working so that's usable. I just can't think of much else I can measure 
+    for the overall results besides what is mentioned above, but what other metrics do you have in mind? you name it and I'll include it 
 
 1/18
 Robert: The return code being 0 when 0 tests were found is the correct behavior as originally intended, but I agree it is a little confusing. I will move it to 2. I'm thinking of reserving 1 for "tests were found correctly, but failed" and 2 as a generic "something happened, and tests were not found/loaded correctly."
