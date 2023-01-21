@@ -1,4 +1,10 @@
 For current math solving testing & report
+1/19
+William: Did you fix that bug you were showing me last time?
+	 Also im going to need access to your repository https://vcs.he.net/math-solver/math-site-solvers-brian.corbett/-/tree/math_solver_report and not
+	    just for a temporary amount of time, please either move it to a repository under your own name so you can give me access yourself or tell tom
+	    to not put a time restriction on it, if you have trouble let me know and ill talk to him about it
+
 1/18
 Robert: The return code being 0 when 0 tests were found is the correct behavior as originally intended, but I agree it is a little confusing. I will move it to 2. I'm thinking of reserving 1 for "tests were found correctly, but failed" and 2 as a generic "something happened, and tests were not found/loaded correctly."
         ok, the latest commit to master should reflect those changes. Addition.json's question is just "2+2", which isn't tagged yet.
