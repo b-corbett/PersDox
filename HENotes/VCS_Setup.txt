@@ -19,7 +19,8 @@ To clone HE git repo, setup environment, etc.
   - -------- [git clone https://vcs.he.net/math-solver/math-site-solvers-brian.corbett.git --recursive]
   - [git clone https://vcs.he.net/brian.corbett/mathbot_testing.git --recursive]
   - type in the fingerprint that is displayed
-  - [cd math-site-solvers-brian.corbett]		
+  - -------- [cd math-site-solvers-brian.corbett]	
+  - [cd mathbot_testing]
   - if you need to get into a branch that is not showing up when you type 'git branch':
 	- git switch <branch-name>
 	- [git switch math_solver_report]
