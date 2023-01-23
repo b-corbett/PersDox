@@ -1,7 +1,17 @@
-Jan 3
+Jan 23
 - Get Network+ exam prep bundle ( due 4/5 ) ( $576 ) ( https://www.comptia.org/certifications/network )
-- Math API ( use project manager )
+
+- Mathbot Tester
+  - Distinguish between these three scenarios:
+    1. Existing solver - output tagged - test failed
+    2. Existing solver - output NOT tagged - test failed
+    3. Non-existing solver...
+  - Add to 'README.md' how to:
+    1. Write manual test for solver
+    2. Run all tests & where to find output
+    3. Run any other scripts part of the project ( mathgenerator..., custom..., etc.)
+    4. Discretionary important details
+
 - Alcumus challenge ( challenge ends on 2/15 ) ( email on 1/2 )
-- Set-up Meistertask for work
 
 TODO-Reminders for the math API work are in my repo
