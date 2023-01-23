@@ -15,6 +15,10 @@ Me: Hey will, I made my own repository https://vcs.he.net/brian.corbett/mathbot_
     are  you planning on using the math generator tester as soon as possible? 
     The tester itself and adding a test result file for each individual problem is working so that's usable. I just can't think of much else I can measure 
     for the overall results besides what is mentioned above, but what other metrics do you have in mind? you name it and I'll include it 
+William: im hoping for a way to distinguish between solvers that have tagged output and fail the tests vs solvers that don't have tagged output yet vs 
+	 problems that we dont even have solvers for yet so those 3 different cases of failing should be tallied/indicated somehow also can you put in the
+	 readme of the repository how to 1) write a manual test for a solver 2) run all the tests and where the output is 3) run any other script thats 
+	 part of the project if any, plus add any other details to the readme that you think is important
 
 1/18
 Robert: The return code being 0 when 0 tests were found is the correct behavior as originally intended, but I agree it is a little confusing. I will move it to 2. I'm thinking of reserving 1 for "tests were found correctly, but failed" and 2 as a generic "something happened, and tests were not found/loaded correctly."
