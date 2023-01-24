@@ -50,6 +50,9 @@ To clone HE git repo, setup environment, etc.
 	-*** [pip install requests]
 	-*** [sudo apt install php php-dom php-mbstring]
   
+9. When done
+	- git commit -m ""
+	- git push origin main
 
 https://vcs.he.net/math-solver/math-solver-issues/-/wikis/home
 https://vcs.he.net/robert.loth/mathbot_api_test/-/tree/master/
