@@ -1,17 +1,25 @@
-Jan 23
+Jan 25
 - Get Network+ exam prep bundle ( due 4/5 ) ( $576 ) ( https://www.comptia.org/certifications/network )
 
+- Alcumus challenge ( challenge ends on 2/15 ) ( email on 1/2 )
+
 - Mathbot Tester
-  - Distinguish between these three scenarios:
+  - Tally up these three scenarios in overall_test_results.txt:
     1. Existing solver - output tagged - test failed
     2. Existing solver - output NOT tagged - test failed
     3. Non-existing solver...
+  *** ^^^^ mathgenerator is innaccurate sometimes and can't be parsed by mathbot, so...
+    - manually report in a file the generated problems that are unparseable by mathbot but are solved when changed 
+            (ie "LCM of $7$ and $20=$" -> "LCM of 7 and 20").
+    - implement testing for problems that are initially unparseable; modify the problem and retest
+      * this is to check if the problem has no solver, or the format was just unparseable for mathbot
+      * report these tests somehow in overall results and/or in test.txt's
+    - check "Goings-On" convo with William
   - Add to 'README.md' how to:
     1. Write manual test for solver
     2. Run all tests & where to find output
     3. Run any other scripts part of the project ( mathgenerator..., custom..., etc.)
     4. Discretionary important details
+  *** ^^^^ add details and 
 
-- Alcumus challenge ( challenge ends on 2/15 ) ( email on 1/2 )
-
-TODO-Reminders for the math API work are in my repo
+--- TODO-Reminders for the math API work are in my repo, but really it's in here more
