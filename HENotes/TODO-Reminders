@@ -16,10 +16,6 @@ Jan 25
       * report these tests somehow in overall results and/or in test.txt's
     - check "Goings-On" convo with William
   - Add to 'README.md' how to:
-    1. Write manual test for solver
-    2. Run all tests & where to find output
-    3. Run any other scripts part of the project ( mathgenerator..., custom..., etc.)
-    4. Discretionary important details
-  *** ^^^^ add details and 
+    1. what the errors mean 
 
 --- TODO-Reminders for the math API work are in my repo, but really it's in here more
