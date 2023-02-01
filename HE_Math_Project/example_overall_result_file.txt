@@ -1,0 +1,24 @@
+overall: success rate
+  basic_math: 88% pass rate
+    addition: 100% pass rate
+    subtraction: 94% pass rate
+  algebra....
+----------
+
+Solver capability data
+
+There were 132 different math problems tested
+43 (32.58%) of them are solved
+89 (67.42%) of them are unsolved
+
+By category:
+Miscellaneous 	  - 10/29 (34.48%)
+Algebra 	  - 6/21  (28.57%)
+Calculus 	  - 2/5   (40.00%)
+Geometry	  - 4/34  (11.76%)
+Basic Math 	  - 17/21 (80.95%)
+Statistics	  - 4/10  (40.00%)
+Computer Science - 0/12  (00.00%) 
+
+
+
