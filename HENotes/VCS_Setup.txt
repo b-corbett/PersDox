@@ -59,7 +59,7 @@ https://vcs.he.net/robert.loth/mathbot_api_test/-/tree/master/
 
 
 for API error: https://linuxconfig.org/how-to-fix-bash-127-error-return-code
-
+ 
 LINKS:
 repo for the math problem generator
 	https://github.com/lukew3/mathgenerator
