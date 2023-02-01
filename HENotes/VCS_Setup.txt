@@ -5,54 +5,53 @@ To get PAT (Personal Access Token)
 MeisterTask
 Make main .txt file that has metrics of all the tests done (meant mostly for mathgenerator testing)
 
-To clone HE git repo, setup environment, etc.
-1. Generate SSH key
+VCS Set-up
+As of Feb. 1
+1. Generate and test SSH key
   - [ssh-keygen -t ed25519 -C "keygen on <date> @ <time>"]
   - no passphrase
-2. Copy key and add it to gitlab account
   - copy key from Home/.ssh/id_ed25519.pub
-    paste into...
-  - Preferences > SSH Keys
-3. Test the SSH key
+  - paste into... Preferences > SSH Keys
   - [ssh -T git@vcs.he.net]
-4. Clone the repository
-  - -------- [git clone https://vcs.he.net/math-solver/math-site-solvers-brian.corbett.git --recursive]
+  
+2. Clone the repository
   - [git clone https://vcs.he.net/brian.corbett/mathbot_testing.git --recursive]
-  - type in the fingerprint that is displayed
-  - -------- [cd math-site-solvers-brian.corbett]	
+  - type in any fingerprints that are displayed
   - [cd mathbot_testing]
-  - if you need to get into a branch that is not showing up when you type 'git branch':
-	- git switch <branch-name>
-	- [git switch math_solver_report]
-5. Set-up python environment
+  - if necessary: [git branch <branch-name>] or [git switch <branch-name>]
+  - *** [git clone https://vcs.he.net/math-solver/math-site-solvers-brian.corbett.git --recursive]
+  - *** [cd math-site-solvers-brian.corbett]	
 
+3. Set-up python environment
   - copy 'make-venv.bash' and paste into the repo root directory
-  - can be found at https://vcs.he.net/math-solver/math-solver-issues/-/wikis/Solver-Author-Orientation 
+        @ https://vcs.he.net/math-solver/math-solver-issues/-/wikis/Solver-Author-Orientation 
   - [bash make-venv.bash venv]
-	- [source venv/bin/activate; export PYTHONPATH=${PYTHONPATH}:$(pwd)]
-  -*** [source venv/bin/activate]
-  -*** [export PYTHONPATH=${PYTHONPATH}:$(pwd)]
-6. Test environment
+  - [source venv/bin/activate; export PYTHONPATH=${PYTHONPATH}:$(pwd)]
+
+4. Test environment (can't be done in current working repo - brian.corbett/mathbot_testing)
   - [cd test; python -m unittest line_slope_2points_test/line_slope_2points_test.py; cd ..]
-  -*** [python -m unittest line_slope_2points_test/line_slope_2points_test.py]
-  -*** [cd ..]
-7. Clone mathbot API
+
+5. Clone mathbot API
 	- [git clone https://vcs.he.net/robert.loth/mathbot_api_test.git --recursive]
 	- keep entering the fingerprint
 	- [cd mathbot_api_test; git switch hard-copy; cd ..]
-	-*** [git switch hard-copy]
-	-*** [cd ..]
 	- https://stackoverflow.com/questions/4924002/git-pulling-from-specific-branch
 	- to pull master into the hard-copy branch > [git pull origin master]
 	- move 'mathbot_api_test/info-tag/' to main repo
+	
 8. Dependencies 
 	- [pip install mathgenerator; pip install requests; sudo apt install php php-dom php-mbstring]
-	-*** [pip install requests]
-	-*** [sudo apt install php php-dom php-mbstring]
   
 9. When done
-	- git commit -m ""
+	- git commit -m "<message>"
 	- git push origin main
+
+
+
+
+
+
+
 
 https://vcs.he.net/math-solver/math-solver-issues/-/wikis/home
 https://vcs.he.net/robert.loth/mathbot_api_test/-/tree/master/
