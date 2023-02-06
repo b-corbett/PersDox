@@ -1,21 +1,15 @@
 Feb 1
-- Get Network+ exam prep bundle BY FEB 5 ( due 4/5 ) ( $576 ) ( https://www.comptia.org/certifications/network )
+- Get Network+ exam prep bundle BY FEB 7 ( due 4/5 ) ( $576 ) ( https://www.comptia.org/certifications/network )
 
 - Alcumus challenge  ( challenge ends on 2/15 ) ( email on 1/2 )
 
 - Mathbot Tester
   - Tally up these three scenarios in overall_test_results.txt:
-    1. Existing solver - output tagged - test failed
-    2. Existing solver - output NOT tagged - test failed
-    3. Non-existing solver...
-  *** ^^^^ mathgenerator is innaccurate sometimes and can't be parsed by mathbot, so...
-    - manually report in a file the generated problems that are unparseable by mathbot but are solved when changed 
-            (ie "LCM of $7$ and $20=$" -> "LCM of 7 and 20").
-    - implement testing for problems that are initially unparseable; modify the problem and retest
-      * this is to check if the problem has no solver, or the format was just unparseable for mathbot
-      * report these tests somehow in overall results and/or in test.txt's
-    - check "Goings-On" convo with William
+     * they are tallied and listed by category. REFACTOR THE CODE
+  - Implement testing for problems that are initially unparseable; modify the problem and retest
+     * this is to check if the problem has no solver, or the format was just unparseable for mathbot
+     * report these tests somehow in overall results and/or in test.txt's
+  - check "Goings-On" convo with William
   - Add to 'README.md' how to:
     1. what the errors mean 
-
---- TODO-Reminders for the math API work are in my repo, but really it's in here more
+    2. details about updating the files from Rob's repo (i'll have to manage this somehow)
