@@ -45,6 +45,17 @@ William: thanks for the update
 	 but removing dollar signs (or some other common pattern change) fixes it, report that too (not sure if theres any other generic transformation 
 	 that might make problems parseable, but removing dollar signs is pretty common)
 	 thanks again and let me know when youve added the tally
+William: i can get to testing the scripts in a bit
+	 but id like you to make a web interface that you can manage, add, run, and summarize tests from
+	 it should be able to execute all the same functions as the script
+	 the main feature would be to have a page to run all the tests and then display the results, per question, as well as an overall 
+	 summary
+	 tests that are previously ran should be saved, and be viewable again from the web interface
+	 ideally you should have the web interface running on your staff.he.net virtual host, which you can ask james on how to log in to 
+	 that and how to make the web interface public
+	 which means the frontend should be written in php
+	 i can write up a more formal spec if you need
+	 but if you just start by getting the web interface in php running on localhost on your machine thats a good start
 
 
 
