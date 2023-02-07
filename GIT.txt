@@ -1,0 +1,11 @@
+git clone https://vcs.he.net/brian.corbett/mathbot_testing.git --recursive
+
+git status
+git add .
+git commit -m ""
+git push origin main
+git pull ....****.....
+git switch <>
+git branch <>
+git checkout <>
+git checkout -b <>
