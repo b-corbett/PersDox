@@ -7,8 +7,8 @@ Feb 1
   - REFACTOR: OverallResultsFile class, helper functions, custom_json
   - Any and all features and functions that are currently implemented should be applied to a web interface
   - Implement testing for problems that are initially unparseable; modify the problem and retest
-     * this is to check if the problem has no solver, or the format was just unparseable for mathbot
-     * report these tests somehow in overall results and/or in test.txt's
+    * this is to check if the problem has no solver, or the format was just unparseable for mathbot
+    * report these tests somehow in overall results and/or in test.txt's
   - check "Goings-On" convo with William
   - Add to 'README.md' how to:
     1. what the errors mean 
