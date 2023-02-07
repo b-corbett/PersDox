@@ -9,3 +9,6 @@ git switch <>
 git branch <>
 git checkout <>
 git checkout -b <>
+
+"As a reminder, to create a new branch, you run git branch branch-name. And to switch to that branch so you can work there, you have to run git switch branch name or git checkout branch-name.
+To push the branch to the remote server, run git push –u origin <branch name>. In my case, the name of that branch is bug-fixes. So, I have to run git push -u origin bug-fixes:"
