@@ -4,8 +4,8 @@ Feb 1
 - Alcumus challenge  ( challenge ends on 2/15 ) ( email on 1/2 )
 
 - Mathbot Tester
+  - REFACTOR: OverallResultsFile class, helper functions, custom_json
   - Any and all features and functions that are currently implemented should be applied to a web interface
-  - REFACTOR THE CODE
   - Implement testing for problems that are initially unparseable; modify the problem and retest
      * this is to check if the problem has no solver, or the format was just unparseable for mathbot
      * report these tests somehow in overall results and/or in test.txt's
