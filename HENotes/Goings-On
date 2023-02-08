@@ -45,6 +45,7 @@ William: thanks for the update
 	 but removing dollar signs (or some other common pattern change) fixes it, report that too (not sure if theres any other generic transformation 
 	 that might make problems parseable, but removing dollar signs is pretty common)
 	 thanks again and let me know when youve added the tally
+    2/7 - 2/8
 William: i can get to testing the scripts in a bit
 	 but id like you to make a web interface that you can manage, add, run, and summarize tests from
 	 it should be able to execute all the same functions as the script
@@ -56,6 +57,11 @@ William: i can get to testing the scripts in a bit
 	 which means the frontend should be written in php
 	 i can write up a more formal spec if you need
 	 but if you just start by getting the web interface in php running on localhost on your machine thats a good start
+William: still writing the spec but just to clarify some things before you leave today:
+	 the web interface should be written in php such that it can be run on the apache web server on staff.he.net, which you have credentials to ssh 
+	 into. for the action of triggering all the tests to run, you should use semaphores or mutexes in php to insure that this can only be triggered 
+	 once at a time (two users should not simultaneously both be able to trigger the tests to run)
+	 there is an sqlite database on the server, so whatever data you might want to store in a database, use sqlite
 
 
 
