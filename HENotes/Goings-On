@@ -62,7 +62,7 @@ William: still writing the spec but just to clarify some things before you leave
 	 into. for the action of triggering all the tests to run, you should use semaphores or mutexes in php to insure that this can only be triggered 
 	 once at a time (two users should not simultaneously both be able to trigger the tests to run)
 	 there is an sqlite database on the server, so whatever data you might want to store in a database, use sqlite
-
+WEB INTERFACE SPECS IN EMAIL FROM WILL ON 2/10 @ 11:26
 
 
 
