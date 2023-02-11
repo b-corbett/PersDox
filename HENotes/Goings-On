@@ -62,7 +62,52 @@ William: still writing the spec but just to clarify some things before you leave
 	 into. for the action of triggering all the tests to run, you should use semaphores or mutexes in php to insure that this can only be triggered 
 	 once at a time (two users should not simultaneously both be able to trigger the tests to run)
 	 there is an sqlite database on the server, so whatever data you might want to store in a database, use sqlite
-WEB INTERFACE SPECS IN EMAIL FROM WILL ON 2/10 @ 11:26
+WEB INTERFACE SPECS IN EMAIL FROM WILL ON 2/10 @ 11:26 -
+"""
+Hi Brian, here's a writeup for what I need for the web interface:
+
+Web Interface for Mathbot Testing
+
+Architecture:
+Written in php with a sqlite db (can call scripts written in other languages)
+Check your progress into a repository in vcs
+
+The goal of the interface is to be able to test the mathbot with problems generated from the python math problem generator: https://github.com/lukew3/mathgenerator
+
+
+Develop a testing interface with the following pages:
+
+1) Generate tests page
+- Page to initiate the creation of test files from the python mathgenerator
+- These should be saved in a database or on the filesystem to be able to be run from the interface later
+- Page should list the timestamp when the query was last run, as well as how many problems were generated
+- Tests generated from a previous query should be removed from the current testing suite and saved, and only the most recently generated tests should be in the testing suite
+
+2) Navigate tests page
+- Table view to inspect each test in a testing suite (the generate tests page should populate the testing suite)
+    - It should default to show only the tests in the most current testing suite
+    - At the top it should list again when this set was generated/last modified
+    - There should be a way to change the table to view any previously generated test suite
+- For each test you should be able to see the full json object displayed in monospace font
+- For tests generated from the python mathgenerator, they should each list their problem type as specified by the python library
+- For each test it should list the expected answer, as well as the most recent returned answer from the mathbot (or nothing if the problem hasn't been queried yet)
+
+3) Create/delete manual tests page
+- In addition to tests generated from the python mathgenerator, you should be able to add/delete custom tests
+- The input should be large or dynamically expand/shrink so that tests can be written in the same json format
+- Manual tests should be saved separately to generated tests
+    - All manually created tests should be included as part of the current testing suite
+- Either include a table here or on the navigate tests page to view/inspect all manual tests, listing the timestamp they were made
+
+4) Run tests page
+- Page to run either a single chosen test or all the tests in the current testing suite
+- Display the timestamp when this was run last
+- Once this is run, a results page should show a breakdown of which tests were successful, which tests failed, why they failed, etc
+    - Include a summarization listing total passed, total failed, total tests, and a breakdown by subject area
+- All previous test results should be saved in a database or on the filesystem
+"""
+
+__________________________________________________________________________________________________________________________________________
 
 
 
