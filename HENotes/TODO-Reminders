@@ -1,11 +1,13 @@
 Feb 1
-- Get Network+ exam prep bundle BY FEB 7 ( due 4/5 ) ( $576 ) ( https://www.comptia.org/certifications/network )
+- !!!!!!!!!!!!!!!!! Get Network+ exam prep bundle BY FEB 7 ( due 4/5 ) ( $576 ) ( https://www.comptia.org/certifications/network )
 
 - Alcumus challenge!!!  ( challenge ends on 2/15 ) ( email on 1/2 )
 
 - Mathbot Tester
-  - REFACTOR: OverallResultsFile class, helper functions, custom_json
   - Any and all features and functions that are currently implemented should be applied to a web interface
+    *** create another repo for the web interface
+    * all test files should be saved in a separate directory
+    * Manual page: dynamically growing 2-column form, writing to file
   - Implement testing for problems that are initially unparseable; modify the problem and retest
     * this is to check if the problem has no solver, or the format was just unparseable for mathbot
     * report these tests somehow in overall results and/or in test.txt's
