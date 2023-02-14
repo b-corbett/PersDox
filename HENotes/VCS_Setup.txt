@@ -27,11 +27,8 @@ As of Feb. 1
         @ https://vcs.he.net/math-solver/math-solver-issues/-/wikis/Solver-Author-Orientation 
   - [bash make-venv.bash venv]
   - [source venv/bin/activate; export PYTHONPATH=${PYTHONPATH}:$(pwd)]
-
-4. Test environment (can't be done in current working repo - brian.corbett/mathbot_testing)
-  - [cd test; python -m unittest line_slope_2points_test/line_slope_2points_test.py; cd ..]
-
-5. Clone mathbot API
+  
+4. Clone mathbot API
 	- [git clone https://vcs.he.net/robert.loth/mathbot_api_test.git --recursive]
 	- keep entering the fingerprint
 	- [cd mathbot_api_test; git switch hard-copy; cd ..]
@@ -39,10 +36,10 @@ As of Feb. 1
 	- to pull master into the hard-copy branch > [git pull origin master]
 	- move 'mathbot_api_test/info-tag/' to main repo
 	
-8. Dependencies 
+5. Dependencies 
 	- [pip install mathgenerator; pip install requests; sudo apt install php php-dom php-mbstring]
   
-9. When done
+6. When done
 	- git commit -m "<message>"
 	- git push origin main
 
