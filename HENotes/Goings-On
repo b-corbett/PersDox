@@ -107,8 +107,25 @@ Develop a testing interface with the following pages:
 - All previous test results should be saved in a database or on the filesystem
 """
 
-__________________________________________________________________________________________________________________________________________
 
+2/15
+Robert: Hello! Hope you are doing well at Fremont 2.
+        I've added a separate branch to the mathbot_api_test repo that uses Pytest instead of the bespoke output format I cooked up.
+        It was mainly made to quickly test specific solvers deployed on a staging branch, but if that output format is more usable for your program, it is available on the "pytest" branch.
+        `git@vcs.he.net:robert.loth/mathbot_api_test.git --branch pytest --recurse-submodules`
+        Running should be something similar to:
+	``` (from the mathbot_api_test root dir:)
+		python3 -m venv ./venv
+		source venv/bin/activate
+		chmod u+x install_requirements.sh 
+		./install_requirements.sh
+
+		pytest
+	```
+	with any arguments defined in `pytest --help` although the default is fairly good.
+	The original output format should still be the same on master, and will remain that way until it's no longer in use
+
+__________________________________________________________________________________________________________________________________________
 
 
 
