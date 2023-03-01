@@ -107,11 +107,19 @@ Develop a testing interface with the following pages:
 - All previous test results should be saved in a database or on the filesystem
 """
 2/28
-Hey Will. I had a couple of questions for the navigation page. 
-1) considering all manual tests are included in the current suite, when a previous suite is selected to be shown in the table, will there have to be persistence regarding which manual tests were a part of those previous suites? or even when a previous suite (previously generated) is selected, any current manual tests can just be included in that suite?   
-2) regarding showing the last returned actual answer, will answers to the problems by the same name need to be carried over to the current suite? for example, will the returned answer for addition that was shown in a suite 2 generations ago still need to be shown in the current suite? or when there's a new suite, the returned answers column can be "cleared" and is reset for the new suite?
-3) what is meant by problem type for the table? do you mean category (basic_math, calculus) or the actual problem name (addition, subtraction)?  
-
+Me: Hey Will. I had a couple of questions for the navigation page. 
+    1) considering all manual tests are included in the current suite, when a previous suite is selected to be shown in the table, will there have to be 
+    	persistence regarding which manual tests were a part of those previous suites? or even when a previous suite (previously generated) is selected, 
+	any current manual tests can just be included in that suite?   
+    2) regarding showing the last returned actual answer, will answers to the problems by the same name need to be carried over to the current suite? for 
+    	example, will the returned answer for addition that was shown in a suite 2 generations ago still need to be shown in the current suite? or when 
+	there's a new suite, the returned answers column can be "cleared" and is reset for the new suite?
+    3) what is meant by problem type for the table? do you mean category (basic_math, calculus) or the actual problem name (addition, subtraction)?  
+William: 1) yes manual tests should be separate from auto generated tests, auto generated tests should be swapped out while keeping the manual tests; 
+	     however whenever a test suite is run it should save which tests were part of it, meaning manual+auto
+         2) no if for example the addition problem has different values for the variables in the problem then you wouldn't want to show the previous 
+	     answer anyways; yes clear the returned answers column
+	 3) category
 
 2/15
 Robert: Hello! Hope you are doing well at Fremont 2.
